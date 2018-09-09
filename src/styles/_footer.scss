@@ -1,0 +1,42 @@
+footer {
+  width: 100%;
+  padding-top: 2em;
+  position: relative;
+
+  .footer__social-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 2em;
+    padding: 7rem;
+    position: relative;
+
+    ul {
+      list-style: none;
+      display: flex;
+
+      li {
+        margin: 2em 1em;
+
+        a {
+          transition: .5s ease-in;
+
+          i {
+            font-size: 3em;
+            color: $primary-background-color;
+
+            &:hover {
+              transform: rotate(360deg);
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .footer__info {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2em;
+  }
+}

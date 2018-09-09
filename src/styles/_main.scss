@@ -1,0 +1,167 @@
+@import 'variables.scss';
+@import 'header.scss';
+@import 'content.scss';
+@import 'portfolio.scss';
+@import 'skills.scss';
+@import 'footer.scss';
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font-family: "Poppins", sans-serif;
+  vertical-align: baseline;
+  transition: all ease 0.2s;
+}
+
+::selection {
+  background: #111720;
+  color: #fff;
+}
+
+body.stripes {
+  width: 100%;
+  height: 100vh;
+  background: url('img/bg.svg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1400px;
+}
+
+.bg {
+  position: absolute;
+  background: url('img/bg_2.svg');
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  bottom: 0;
+  filter: opacity(30%);
+  z-index: -999;
+}
+
+.section__title {
+  font-size: 2em;
+}
+
+.btn {
+  display: inline-block;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border: none;
+  padding: 1.08rem 1.1rem 1.1rem 1.1rem;
+  margin: 15px 0;
+  text-decoration: none;
+  font-family: nimbus-sans, sans-serif;
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 1;
+  color: #fff;
+  background: $primary-background-color;
+  border-radius: .375rem;
+  -webkit-box-shadow: 0 .25rem .43rem 0 var(--shadow-color);
+  box-shadow: 0 .25rem .43rem 0 var(--shadow-color);
+  -webkit-transition: all .2s cubic-bezier(.83, .16, .53, .65);
+  transition: all .2s cubic-bezier(.83, .16, .53, .65);
+  text-shadow: none;
+
+  span {
+    margin-left: 5px;
+  }
+
+  &:active {
+    outline: none;
+  }
+
+  &:hover {
+    outline: none;
+    cursor: pointer;
+    transform: translateY(-5px);
+  }
+}

@@ -1,0 +1,45 @@
+.content {
+  padding: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  animation: fadeDown 1s forwards 0s linear;
+
+  .content__about {
+    h1 {
+      font-size: 48px;
+      font-weight: 400;
+      margin-bottom: 24px;
+      text-shadow: 0 .13rem .13rem rgba(108, 99, 255, 0.4);
+
+      .tagline {
+        text-shadow: 0 .13rem .13rem rgba(108, 99, 255, 0.4)
+      }
+    }
+
+    p {
+      color: $primary-light-text-color;
+    }
+  }
+
+  .content__image {
+    width: 38%;
+
+    img {
+      width: 100%;
+    }
+  }
+}
+
+@keyframes fadeDown {
+  0% {
+    transform: rotate(0) translateY(-10%);
+    opacity: 0;
+  }
+
+  100% {
+    transform: rotate(0) translateY(0);
+    opacity: 1;
+  }
+}
