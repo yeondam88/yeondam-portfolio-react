@@ -6,10 +6,6 @@
   padding-top: 8em;
   padding-bottom: 10em;
 
-  .portfolio__title {
-    font-size: 2em;
-  }
-
   .portfolio__container {
     display: grid;
     grid-gap: 2rem 4rem;
@@ -19,14 +15,7 @@
     box-shadow: $box-shadow;
 
     .card {
-      width: 100%;
-      position: relative;
-      will-change: left, top, box-shadow;
-      -webkit-transition: left .2s ease, top .2s ease, box-shadow .2s ease;
-      transition: left .2s ease, top .2s ease, box-shadow .2s ease;
-      position: relative;
-      left: 0;
-      top: 0;
+      @extend %card;
 
       img {
         width: 100%;

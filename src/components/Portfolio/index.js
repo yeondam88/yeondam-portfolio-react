@@ -60,99 +60,39 @@ class Portfolio extends Component {
           "https://cdn.dribbble.com/users/44585/screenshots/4926663/bug-lab-bee-ig.jpg.png",
         description: "item 1 is made with React and Redux."
       }
-    ]
+    ],
+    activePortfolio: {}
   };
 
   openPortfolioDetail = (id, e) => {
     this.setState({ isActive: true });
-    this.getFiltered(id);
+    this.getActivePortfolio(id);
   };
 
   closePortfolioDetail = () => {
     this.setState({
       isActive: false
     });
-    this.resetState();
   };
 
-  resetState = () => {
-    this.setState({
-      portfolios: [
-        {
-          id: 1,
-          title: "item 1",
-          path:
-            "https://cdn.dribbble.com/users/25686/screenshots/5140212/dribbble.jpg",
-          description: "item 1 is made with React and Redux."
-        },
-        {
-          id: 2,
-          title: "item 2",
-          path:
-            "https://cdn.dribbble.com/users/44585/screenshots/5140880/wolverine-dribbble.png",
-          description: "item 1 is made with React and Redux."
-        },
-        {
-          id: 3,
-          title: "item 3",
-          path:
-            "https://cdn.dribbble.com/users/44585/screenshots/4959706/iron-man-dribbble.png",
-          description: "item 1 is made with React and Redux."
-        },
-        {
-          id: 4,
-          title: "item 4",
-          path:
-            "https://cdn.dribbble.com/users/44585/screenshots/5021576/thor.png",
-          description: "item 1 is made with React and Redux."
-        },
-        {
-          id: 5,
-          title: "item 5",
-          path:
-            "https://cdn.dribbble.com/users/25686/screenshots/4810050/dribbble.jpg",
-          description: "item 1 is made with React and Redux."
-        },
-        {
-          id: 6,
-          title: "item 6",
-          path:
-            "https://cdn.dribbble.com/users/1205252/screenshots/4853796/catrinas.png",
-          description: "item 1 is made with React and Redux."
-        },
-        {
-          id: 7,
-          title: "item 7",
-          path:
-            "https://cdn.dribbble.com/users/1205252/screenshots/4845230/erkaeva-shop.png",
-          description: "item 1 is made with React and Redux."
-        },
-        {
-          id: 8,
-          title: "item 8",
-          path:
-            "https://cdn.dribbble.com/users/44585/screenshots/4926663/bug-lab-bee-ig.jpg.png",
-          description: "item 1 is made with React and Redux."
-        }
-      ]
-    });
-  };
-
-  getFiltered = id => {
-    const filtered = this.state.portfolios.filter(portfolio => {
+  getActivePortfolio = id => {
+    const activePortfolio = this.state.portfolios.find(portfolio => {
       return portfolio.id === id;
     });
 
-    this.setState({
-      portfolios: filtered
-    });
+    this.setState(
+      {
+        activePortfolio
+      },
+      () => console.log(this.state.activePortfolio)
+    );
   };
 
   render() {
     return (
       <section className="portfolio">
         <h2 id="portfolio" className="section__title">
-          Portfolio
+          <strong>Portfolio</strong>
         </h2>
         <div className="portfolio__container">
           <div
@@ -231,26 +171,20 @@ class Portfolio extends Component {
             />
           </div>
         </div>
-        {this.state.portfolios.map(item => {
-          return (
-            <div
-              className={`portfolio__detail ${
-                this.state.isActive ? "open" : null
-              }`}
-            >
-              <div onClick={this.closePortfolioDetail}>
-                <i className="close fas fa-times" />
-              </div>
-              <div className="portfolio__detail-row">
-                <div className="portfolio__detail-description">
-                  <h1>{item.title}</h1>
-                  <p>{item.description}</p>
-                </div>
-                <img src={item.path} alt="portfolio" />
-              </div>
+        <div
+          className={`portfolio__detail ${this.state.isActive ? "open" : null}`}
+        >
+          <div onClick={this.closePortfolioDetail}>
+            <i className="close fas fa-times" />
+          </div>
+          <div className="portfolio__detail-row">
+            <div className="portfolio__detail-description">
+              <h1>{this.state.activePortfolio.title}</h1>
+              <p>{this.state.activePortfolio.description}</p>
             </div>
-          );
-        })}
+            <img src={this.state.activePortfolio.path} alt="portfolio" />
+          </div>
+        </div>
       </section>
     );
   }

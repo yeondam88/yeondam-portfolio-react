@@ -1,8 +1,8 @@
 import React, { Component } from "react";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Header from "./components/Header";
-import Content from "./components/Content";
-import Portfolio from "./components/Portfolio";
-import Skills from "./components/Skills";
+import Home from "./components/Home";
+import About from "./components/About";
 import Footer from "./components/Footer";
 
 import "./App.css";
@@ -10,13 +10,16 @@ import "./App.css";
 class App extends Component {
   render() {
     return (
-      <React.Fragment>
-        <Header />
-        <Content />
-        <Portfolio />
-        <Skills />
-        <Footer />
-      </React.Fragment>
+      <Router>
+        <React.Fragment>
+          <Header />
+          <Switch>
+            <Route exact path="/" component={Home} />
+            <Route path="/about" component={About} />
+          </Switch>
+          <Footer />
+        </React.Fragment>
+      </Router>
     );
   }
 }

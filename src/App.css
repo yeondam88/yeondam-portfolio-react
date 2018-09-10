@@ -1,3 +1,13 @@
+.portfolio .portfolio__container .card, .about .about__container .card {
+  width: 100%;
+  position: relative;
+  will-change: left, top, box-shadow;
+  -webkit-transition: left .2s ease, top .2s ease, box-shadow .2s ease;
+  transition: left .2s ease, top .2s ease, box-shadow .2s ease;
+  position: relative;
+  left: 0;
+  top: 0; }
+
 .header__section {
   margin: 3em 0 3em 0; }
   .header__section .nav {
@@ -50,8 +60,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  flex-wrap: wrap;
-  animation: fadeDown 1s forwards 0s linear; }
+  flex-wrap: wrap; }
   .content .content__about h1 {
     font-size: 48px;
     font-weight: 400;
@@ -66,14 +75,6 @@
     .content .content__image img {
       width: 100%; }
 
-@keyframes fadeDown {
-  0% {
-    transform: rotate(0) translateY(-10%);
-    opacity: 0; }
-  100% {
-    transform: rotate(0) translateY(0);
-    opacity: 1; } }
-
 .portfolio {
   width: 100%;
   position: relative;
@@ -81,8 +82,6 @@
   text-align: center;
   padding-top: 8em;
   padding-bottom: 10em; }
-  .portfolio .portfolio__title {
-    font-size: 2em; }
   .portfolio .portfolio__container {
     display: grid;
     grid-gap: 2rem 4rem;
@@ -90,23 +89,14 @@
     padding: 4em;
     background: #fff;
     box-shadow: 0 20px 36px -4px rgba(157, 166, 186, 0.4); }
-    .portfolio .portfolio__container .card {
+    .portfolio .portfolio__container .card img {
       width: 100%;
-      position: relative;
-      will-change: left, top, box-shadow;
-      -webkit-transition: left .2s ease, top .2s ease, box-shadow .2s ease;
-      transition: left .2s ease, top .2s ease, box-shadow .2s ease;
-      position: relative;
-      left: 0;
-      top: 0; }
-      .portfolio .portfolio__container .card img {
-        width: 100%;
-        position: relative; }
-      .portfolio .portfolio__container .card:hover {
-        left: -5px;
-        top: -5px;
-        -webkit-box-shadow: 10px 10px 0 #6c63ff;
-        box-shadow: 10px 10px 0 #6c63ff; }
+      position: relative; }
+    .portfolio .portfolio__container .card:hover {
+      left: -5px;
+      top: -5px;
+      -webkit-box-shadow: 10px 10px 0 #6c63ff;
+      box-shadow: 10px 10px 0 #6c63ff; }
   .portfolio .portfolio__detail {
     position: absolute;
     width: 100%;
@@ -332,6 +322,34 @@
       transform: translate(-50%, -50%);
       z-index: -99; }
 
+.about {
+  width: 100%;
+  position: relative;
+  transition: all .5s ease;
+  text-align: center;
+  padding-top: 8em;
+  padding-bottom: 10em; }
+  .about .about__container {
+    display: grid;
+    grid-gap: 2rem 4rem;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 4em;
+    background: #fff;
+    box-shadow: 0 20px 36px -4px rgba(157, 166, 186, 0.4); }
+    .about .about__container .card {
+      display: flex;
+      background: #eee;
+      justify-content: space-evenly;
+      align-items: center;
+      height: 200px; }
+      .about .about__container .card:hover {
+        left: -5px;
+        top: -5px;
+        -webkit-box-shadow: 10px 10px 0 #6c63ff;
+        box-shadow: 10px 10px 0 #6c63ff; }
+    .about .about__container .about__container-item {
+      text-align: left; }
+
 footer {
   width: 100%;
   padding-top: 2em;
@@ -476,7 +494,8 @@ body.stripes {
   z-index: -999; }
 
 .section__title {
-  font-size: 2em; }
+  font-size: 2em;
+  text-shadow: 1px 2px 0 #6c63ff; }
 
 .btn {
   display: inline-block;

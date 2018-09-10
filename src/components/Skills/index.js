@@ -2,43 +2,43 @@ import React from "react";
 
 const Skills = () => {
   return (
-    <section class="skills">
-      <h2 class="section__title">Skills</h2>
-      <div id="skills" class="skills__info">
-        <ul class="skills__info-list">
-          <li class="skills__info-list--item">
+    <section className="skills">
+      <h2 className="section__title">Skills</h2>
+      <div id="skills" className="skills__info">
+        <ul className="skills__info-list">
+          <li className="skills__info-list--item">
             <h3>HTML 5</h3>
-            <i class="fab fa-html5" />
+            <i className="fab fa-html5" />
           </li>
-          <li class="skills__info-list--item">
+          <li className="skills__info-list--item">
             <h3>CSS 3</h3>
-            <i class="fab fa-css3-alt" />
+            <i className="fab fa-css3-alt" />
           </li>
-          <li class="skills__info-list--item">
+          <li className="skills__info-list--item">
             <h3>JavaScript</h3>
-            <i class="fab fa-js-square" />
+            <i className="fab fa-js-square" />
           </li>
-          <li class="skills__info-list--item">
+          <li className="skills__info-list--item">
             <h3>NodeJS</h3>
-            <i class="fab fa-node-js" />
+            <i className="fab fa-node-js" />
           </li>
         </ul>
-        <ul class="skills__info-list">
-          <li class="skills__info-list--item">
+        <ul className="skills__info-list">
+          <li className="skills__info-list--item">
             <h3>Sass</h3>
-            <i class="fab fa-sass" />
+            <i className="fab fa-sass" />
           </li>
-          <li class="skills__info-list--item">
+          <li className="skills__info-list--item">
             <h3>React</h3>
-            <i class="fab fa-react" />
+            <i className="fab fa-react" />
           </li>
-          <li class="skills__info-list--item">
+          <li className="skills__info-list--item">
             <h3>Git</h3>
-            <i class="fab fa-github" />
+            <i className="fab fa-github" />
           </li>
-          <li class="skills__info-list--item">
+          <li className="skills__info-list--item">
             <h3>Python</h3>
-            <i class="fab fa-python" />
+            <i className="fab fa-python" />
           </li>
         </ul>
       </div>
