@@ -13,7 +13,7 @@ class About extends Component {
               My name is <strong className="tagline">Yeondam Park</strong>
               <br />
             </h1>
-            <p>
+            <p className="content__about-description">
               I' m Self-taught Front End Engineer who is passionate about
               <br />
               building a beautiful things with the latest front-end
@@ -41,9 +41,17 @@ class About extends Component {
                 alt="vrs logo"
               />
               <div className="about__container-item">
-                <h1>VRS Design</h1>
+                <h1>
+                  VRS Design{" "}
+                  <span className="about__container-item--link">
+                    <a href="https://vrsdesign.com" target="_blank">
+                      <i className="fas fa-external-link-alt" />
+                    </a>
+                  </span>
+                </h1>
                 <p>2016 - Present</p>
                 <p>Front End Developer</p>
+                <i className="fal fa-browser" />
               </div>
             </div>
             <div className="card">
@@ -53,7 +61,14 @@ class About extends Component {
                 alt="kw logo"
               />
               <div className="about__container-item">
-                <h1>KW International</h1>
+                <h1>
+                  KW International{" "}
+                  <span className="about__container-item--link">
+                    <a href="http://kwinternational.com" target="_blank">
+                      <i className="fas fa-external-link-alt" />
+                    </a>
+                  </span>
+                </h1>
                 <p>2015 - 2016</p>
                 <p>IT associate / Supervisor</p>
               </div>

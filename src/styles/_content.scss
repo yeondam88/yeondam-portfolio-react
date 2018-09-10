@@ -20,6 +20,11 @@
     p {
       color: $primary-light-text-color;
     }
+
+    &-description {
+      color: $primary-text-color !important;
+      font-size: 1.2em;
+    }
   }
 
   .content__image {

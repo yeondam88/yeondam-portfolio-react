@@ -3,7 +3,7 @@
   position: relative;
   transition: all .5s ease;
   text-align: center;
-  padding-top: 8em;
+  padding-top: 5em;
   padding-bottom: 10em;
 
   .about__container {
@@ -17,7 +17,7 @@
     .card {
       @extend %card;
       display: flex;
-      background: #eee;
+      background: #fbf7f5;
       justify-content: space-evenly;
       align-items: center;
       height: 200px;
@@ -32,6 +32,18 @@
 
     .about__container-item {
       text-align: left;
+
+      &>* {
+        color: $primary-text-color;
+      }
+
+      &--link {
+        margin-left: 5px;
+
+        a {
+          color: $primary-text-color;
+        }
+      }
     }
   }
 }

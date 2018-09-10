@@ -1,8 +1,15 @@
-$primary-text-color: #373C46;
+/*
+** Variables
+*/
+$primary-text-color: #111720;
+$secondary-text-color: #373C46;
 $primary-light-text-color: #9DA6BA;
 $primary-background-color: #6c63ff;
 $box-shadow: 0 20px 36px -4px rgba(157, 166, 186, 0.4);
 
+/*
+** Extends
+*/
 %card {
   width: 100%;
   position: relative;
@@ -12,4 +19,11 @@ $box-shadow: 0 20px 36px -4px rgba(157, 166, 186, 0.4);
   position: relative;
   left: 0;
   top: 0;
+}
+
+/*
+**  Mixins
+*/
+@mixin textShadow($color) {
+  text-shadow: 1px 2px 0 $color;
 }
