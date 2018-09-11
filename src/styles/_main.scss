@@ -128,7 +128,7 @@ body.stripes {
 
 .section__title {
   font-size: 2em;
-  @include textShadow($primary-text-color);
+  @include textShadow($primary-background-color);
 }
 
 .btn {
