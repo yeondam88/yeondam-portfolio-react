@@ -6,6 +6,9 @@
   flex-wrap: wrap;
 
   .content__about {
+    width: 50%;
+    position: relative;
+
     h1 {
       font-size: 48px;
       font-weight: 400;
@@ -13,12 +16,14 @@
       text-shadow: 0 .13rem .13rem rgba(108, 99, 255, 0.4);
 
       .tagline {
+        position: absolute;
         text-shadow: 0 .13rem .13rem rgba(108, 99, 255, 0.4)
       }
     }
 
     p {
       color: $primary-light-text-color;
+      margin-top: 5em;
     }
 
     &-description {
