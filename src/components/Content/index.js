@@ -7,8 +7,6 @@ const Text = posed.strong({
   hidden: { opacity: 0 }
 });
 
-const texts = ["a Front End Engineer", "a JavaScript Lover"];
-
 class Content extends Component {
   state = {
     textIdx: 0,
@@ -22,7 +20,6 @@ class Content extends Component {
   }
 
   render() {
-    let textThatChanges = texts[this.state.textIdx % texts.length];
     const { isVisible } = this.state;
     return (
       <section className="content">
@@ -34,7 +31,7 @@ class Content extends Component {
               a Front End Engineer
             </Text>
             <Text className="tagline" pose={isVisible ? "hidden" : "visible"}>
-              a JavaScript Lover
+              a JavaScript Ninja
             </Text>
           </h1>
           <p>

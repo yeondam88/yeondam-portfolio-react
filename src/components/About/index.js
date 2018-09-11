@@ -44,7 +44,11 @@ class About extends Component {
                 <h1>
                   VRS Design{" "}
                   <span className="about__container-item--link">
-                    <a href="https://vrsdesign.com" target="_blank">
+                    <a
+                      href="https://vrsdesign.com"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
                       <i className="fas fa-external-link-alt" />
                     </a>
                   </span>
@@ -64,7 +68,11 @@ class About extends Component {
                 <h1>
                   KW International{" "}
                   <span className="about__container-item--link">
-                    <a href="http://kwinternational.com" target="_blank">
+                    <a
+                      href="http://kwinternational.com"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
                       <i className="fas fa-external-link-alt" />
                     </a>
                   </span>

@@ -2,15 +2,13 @@ export const portfolioData = [
   {
     id: 1,
     title: "item 1",
-    path:
-      "https://cdn.dribbble.com/users/25686/screenshots/5140212/dribbble.jpg",
+    path: "/img/portfolio-1.png",
     description: "item 1 is made with React and Redux."
   },
   {
     id: 2,
     title: "item 2",
-    path:
-      "https://cdn.dribbble.com/users/44585/screenshots/5140880/wolverine-dribbble.png",
+    path: "/img/portfolio-2.png",
     description: "item 1 is made with React and Redux."
   },
   {
