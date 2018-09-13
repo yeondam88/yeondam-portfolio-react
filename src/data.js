@@ -1,48 +1,44 @@
 export const portfolioData = [
   {
     id: 1,
-    title: "item 1",
-    path: "/img/portfolio-1.png",
+    title: "Airbnb looks Rental App",
+    path: "http://mylamall.com/yeondam/portfolio-1.png",
     description: "item 1 is made with React and Redux."
   },
   {
     id: 2,
-    title: "item 2",
-    path: "/img/portfolio-2.png",
+    title: "Devconnect Social media App",
+    path: "http://mylamall.com/yeondam/portfolio-2.png",
     description: "item 1 is made with React and Redux."
   },
   {
     id: 3,
-    title: "item 3",
-    path:
-      "https://cdn.dribbble.com/users/44585/screenshots/4959706/iron-man-dribbble.png",
+    title: "VRS Design Official Site",
+    path: "http://mylamall.com/yeondam/portfolio-3.png",
     description: "item 1 is made with React and Redux."
   },
   {
     id: 4,
-    title: "item 4",
-    path: "https://cdn.dribbble.com/users/44585/screenshots/5021576/thor.png",
+    title: "MovieMatch",
+    path: "http://mylamall.com/yeondam/portfolio-4.png",
     description: "item 1 is made with React and Redux."
   },
   {
     id: 5,
-    title: "item 5",
-    path:
-      "https://cdn.dribbble.com/users/25686/screenshots/4810050/dribbble.jpg",
+    title: "Lyrics Finder",
+    path: "http://mylamall.com/yeondam/portfolio-5.png",
     description: "item 1 is made with React and Redux."
   },
   {
     id: 6,
-    title: "item 6",
-    path:
-      "https://cdn.dribbble.com/users/1205252/screenshots/4853796/catrinas.png",
+    title: "Reddit Finder",
+    path: "http://mylamall.com/yeondam/portfolio-6.png",
     description: "item 1 is made with React and Redux."
   },
   {
     id: 7,
-    title: "item 7",
-    path:
-      "https://cdn.dribbble.com/users/1205252/screenshots/4845230/erkaeva-shop.png",
+    title: "Expensify",
+    path: "http://mylamall.com/yeondam/portfolio-7.png",
     description: "item 1 is made with React and Redux."
   },
   {
