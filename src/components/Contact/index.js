@@ -14,18 +14,19 @@ const Contact = () => {
             Shoot me an email!
             <br />
           </h1>
-
-          <button className="btn">
-            Say Hello{" "}
-            <span>
-              <img
-                width="13px"
-                height="14px"
-                src={img}
-                alt="paper plain icon"
-              />
-            </span>
-          </button>
+          <a href="mailto:lloyd.park88@gmail.com">
+            <button className="btn">
+              Say Hello{" "}
+              <span>
+                <img
+                  width="13px"
+                  height="14px"
+                  src={img}
+                  alt="paper plain icon"
+                />
+              </span>
+            </button>
+          </a>
         </div>
         <div className="content__image">
           <img
@@ -33,26 +34,34 @@ const Contact = () => {
             alt="Yeondam Park"
           />
         </div>
+      </section>
+      <section className="form__area">
+        <div className="form__area-heading">
+          <h2 className="form__area-title">Send me a message!</h2>
+        </div>
         <form name="contact" method="post">
           <input type="hidden" name="form-name" value="contact" />
-          <p>
-            <label>
-              Your Name: <input type="text" name="name" />
-            </label>
-          </p>
-          <p>
-            <label>
-              Your Email: <input type="email" name="email" />
-            </label>
-          </p>
-          <p>
-            <label>
-              Message: <textarea name="message" />
-            </label>
-          </p>
-          <p>
-            <button type="submit">Send</button>
-          </p>
+          <label>Your Name: </label>
+          <div className="input__bar">
+            <div className="input__bar-field">
+              <input className="form__area-input" type="text" name="name" />
+            </div>
+          </div>
+          <label>Your Email: </label>
+          <div className="input__bar">
+            <div className="input__bar-field">
+              <input className="form__area-input" type="email" name="email" />
+            </div>
+          </div>
+          <label>Message: </label>
+          <div className="input__bar">
+            <div className="input__bar-field">
+              <textarea className="form__area-input textfield" name="message" />
+            </div>
+          </div>
+          <button className="btn" type="submit">
+            Send
+          </button>
         </form>
       </section>
     </React.Fragment>

@@ -4,6 +4,7 @@
 @import 'portfolio.scss';
 @import 'skills.scss';
 @import 'about.scss';
+@import 'contact.scss';
 @import 'footer.scss';
 
 html,
@@ -94,6 +95,10 @@ video {
   font-family: "Poppins", sans-serif;
   vertical-align: baseline;
   transition: all ease 0.2s;
+}
+
+* {
+  box-sizing: border-box;
 }
 
 ::selection {

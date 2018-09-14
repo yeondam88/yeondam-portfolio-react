@@ -109,6 +109,7 @@
       width: 100%;
       position: relative; }
     .portfolio .portfolio__container .card:hover {
+      cursor: pointer;
       left: -5px;
       top: -5px;
       -webkit-box-shadow: 10px 10px 0 #6c63ff;
@@ -150,7 +151,7 @@
     .portfolio .portfolio__detail img {
       padding: 0;
       margin: 0;
-      height: 80%; }
+      width: 50%; }
     .portfolio .portfolio__detail .close {
       position: absolute !important;
       top: 4% !important;
@@ -265,6 +266,61 @@
         margin-left: 5px; }
         .about .about__container .about__container-item--link a {
           color: #111720; }
+
+.form__area {
+  padding-top: 6em;
+  background: #fff;
+  box-shadow: 0 20px 36px -4px rgba(157, 166, 186, 0.4);
+  width: 70%;
+  margin: auto; }
+  .form__area .form__area-heading {
+    text-align: center; }
+    .form__area .form__area-heading h2 {
+      font-size: 2.5em;
+      text-transform: uppercase;
+      color: #000; }
+  .form__area form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: flex-start;
+    padding: 2em; }
+    .form__area form .input__bar {
+      display: block;
+      border: 1px solid #d8e4e7;
+      width: 100%;
+      height: 75px;
+      background-color: rgba(255, 255, 255, 0.95);
+      border-radius: 4px;
+      -webkit-border-radius: 4px;
+      -moz-border-radius: 4px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+      -webkit-box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+      -moz-box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+      -o-transition-property: all;
+      transition-property: all;
+      -o-transition-duration: .3s;
+      transition-duration: .3s;
+      -webkit-transition-property: all;
+      -webkit-transition-duration: .3s;
+      position: relative;
+      margin-bottom: 2em; }
+      .form__area form .input__bar .input__bar-field {
+        height: 100%; }
+        .form__area form .input__bar .input__bar-field .form__area-input {
+          font-size: 1em;
+          padding-left: 50px;
+          color: #111720;
+          background: transparent;
+          font-weight: 400;
+          width: 100%;
+          height: 100%;
+          text-transform: inherit;
+          letter-spacing: inherit;
+          outline: none;
+          border: none; }
+        .form__area form .input__bar .input__bar-field .textfield {
+          padding-top: 1em; }
 
 footer {
   width: 100%;
@@ -382,6 +438,9 @@ video {
   font-family: "Poppins", sans-serif;
   vertical-align: baseline;
   transition: all ease 0.2s; }
+
+* {
+  box-sizing: border-box; }
 
 ::selection {
   background: #111720;
