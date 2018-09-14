@@ -145,6 +145,17 @@ class Portfolio extends Component {
               <hr />
               <p>Stacks</p>
               {this.renderStacksList(this.state.activePortfolio.stacks)}
+              <a
+                href={this.state.activePortfolio.link}
+                className="btn"
+                style={{ width: "100%" }}
+                target="_blank"
+              >
+                See in action{" "}
+                <span>
+                  <i className="fas fa-desktop" style={{ color: "white" }} />
+                </span>
+              </a>
             </div>
             <img src={this.state.activePortfolio.path} alt="portfolio" />
           </div>
