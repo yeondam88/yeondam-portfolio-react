@@ -329,6 +329,20 @@
         .form__area form .input__bar .input__bar-field .textfield {
           padding-top: 1em; }
 
+.resume {
+  padding-top: 4em;
+  width: calc(100% - 10%);
+  max-width: 1400px;
+  margin-bottom: 4em;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: center; }
+  .resume .resume__area {
+    box-shadow: 0 20px 36px -4px rgba(157, 166, 186, 0.4); }
+  .resume .resume__page {
+    height: 100% !important; }
+
 footer {
   width: 100%;
   padding-top: 2em;
