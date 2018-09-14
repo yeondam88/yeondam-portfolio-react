@@ -71,6 +71,17 @@
       overflow: auto;
     }
 
+    .portfolio__detail-stacks {
+      list-style: none;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+
+      &--item {
+        margin: 10px 5px;
+      }
+    }
+
     img {
       padding: 0;
       margin: 0;
@@ -117,4 +128,6 @@
     -webkit-transition-delay: 0.5s;
     transition-delay: 0.5s;
   }
+
+
 }

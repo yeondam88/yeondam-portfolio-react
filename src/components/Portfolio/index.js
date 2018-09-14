@@ -32,6 +32,23 @@ class Portfolio extends Component {
     );
   };
 
+  renderStacksList = stacks => {
+    if (stacks === undefined || stacks.length === 0) {
+      return null;
+    }
+    return (
+      <ul className="portfolio__detail-stacks">
+        {stacks.map((stack, index) => {
+          return (
+            <li className="portfolio__detail-stacks--item" key={index}>
+              {stack}
+            </li>
+          );
+        })}
+      </ul>
+    );
+  };
+
   render() {
     return (
       <section className="portfolio">
@@ -46,7 +63,7 @@ class Portfolio extends Component {
             <a>
               <img
                 data-id="1"
-                src="https://cdn.dribbble.com/users/25686/screenshots/5140212/dribbble.jpg"
+                src="http://mylamall.com/yeondam/portfolio-1.png"
                 alt="portfolio"
               />
             </a>
@@ -56,7 +73,7 @@ class Portfolio extends Component {
             onClick={this.openPortfolioDetail.bind(this, 2)}
           >
             <img
-              src="https://cdn.dribbble.com/users/44585/screenshots/5140880/wolverine-dribbble.png"
+              src="http://mylamall.com/yeondam/portfolio-2.png"
               alt="portfolio"
             />
           </div>
@@ -65,7 +82,7 @@ class Portfolio extends Component {
             onClick={this.openPortfolioDetail.bind(this, 3)}
           >
             <img
-              src="https://cdn.dribbble.com/users/44585/screenshots/4959706/iron-man-dribbble.png"
+              src="http://mylamall.com/yeondam/portfolio-3.png"
               alt="portfolio"
             />
           </div>
@@ -74,7 +91,7 @@ class Portfolio extends Component {
             onClick={this.openPortfolioDetail.bind(this, 4)}
           >
             <img
-              src="https://cdn.dribbble.com/users/44585/screenshots/5021576/thor.png"
+              src="http://mylamall.com/yeondam/portfolio-4.png"
               alt="portfolio"
             />
           </div>
@@ -83,7 +100,7 @@ class Portfolio extends Component {
             onClick={this.openPortfolioDetail.bind(this, 5)}
           >
             <img
-              src="https://cdn.dribbble.com/users/25686/screenshots/4810050/dribbble.jpg"
+              src="http://mylamall.com/yeondam/portfolio-5.png"
               alt="portfolio"
             />
           </div>
@@ -92,7 +109,7 @@ class Portfolio extends Component {
             onClick={this.openPortfolioDetail.bind(this, 6)}
           >
             <img
-              src="https://cdn.dribbble.com/users/1205252/screenshots/4853796/catrinas.png"
+              src="http://mylamall.com/yeondam/portfolio-6.png"
               alt="portfolio"
             />
           </div>
@@ -101,7 +118,7 @@ class Portfolio extends Component {
             onClick={this.openPortfolioDetail.bind(this, 7)}
           >
             <img
-              src="https://cdn.dribbble.com/users/1205252/screenshots/4845230/erkaeva-shop.png"
+              src="http://mylamall.com/yeondam/portfolio-7.png"
               alt="portfolio"
             />
           </div>
@@ -125,6 +142,9 @@ class Portfolio extends Component {
             <div className="portfolio__detail-description">
               <h1>{this.state.activePortfolio.title}</h1>
               <p>{this.state.activePortfolio.description}</p>
+              <hr />
+              <p>Stacks</p>
+              {this.renderStacksList(this.state.activePortfolio.stacks)}
             </div>
             <img src={this.state.activePortfolio.path} alt="portfolio" />
           </div>

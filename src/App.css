@@ -148,6 +148,13 @@
         font-size: 35px;
         line-height: 2.3;
         padding: 0; }
+    .portfolio .portfolio__detail .portfolio__detail-stacks {
+      list-style: none;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-evenly; }
+      .portfolio .portfolio__detail .portfolio__detail-stacks--item {
+        margin: 10px 5px; }
     .portfolio .portfolio__detail img {
       padding: 0;
       margin: 0;
