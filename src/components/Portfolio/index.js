@@ -1,4 +1,6 @@
 import React, { Component } from "react";
+import Spinner from "../shared/Spinner";
+import Img from "react-image";
 import { portfolioData } from "../../data";
 
 class Portfolio extends Component {
@@ -61,10 +63,20 @@ class Portfolio extends Component {
             onClick={this.openPortfolioDetail.bind(this, 1)}
           >
             <a>
-              <img
+              <Img
                 data-id="1"
                 src="http://mylamall.com/yeondam/portfolio-1.png"
                 alt="portfolio"
+                loader={
+                  <Spinner
+                    styles={{
+                      top: "50%",
+                      background: "black",
+                      width: "100%",
+                      height: "100%"
+                    }}
+                  />
+                }
               />
             </a>
           </div>
@@ -72,7 +84,7 @@ class Portfolio extends Component {
             className="card"
             onClick={this.openPortfolioDetail.bind(this, 2)}
           >
-            <img
+            <Img
               src="http://mylamall.com/yeondam/portfolio-2.png"
               alt="portfolio"
             />
@@ -81,7 +93,7 @@ class Portfolio extends Component {
             className="card"
             onClick={this.openPortfolioDetail.bind(this, 3)}
           >
-            <img
+            <Img
               src="http://mylamall.com/yeondam/portfolio-3.png"
               alt="portfolio"
             />
@@ -90,7 +102,7 @@ class Portfolio extends Component {
             className="card"
             onClick={this.openPortfolioDetail.bind(this, 4)}
           >
-            <img
+            <Img
               src="http://mylamall.com/yeondam/portfolio-4.png"
               alt="portfolio"
             />
@@ -99,7 +111,7 @@ class Portfolio extends Component {
             className="card"
             onClick={this.openPortfolioDetail.bind(this, 5)}
           >
-            <img
+            <Img
               src="http://mylamall.com/yeondam/portfolio-5.png"
               alt="portfolio"
             />
@@ -108,7 +120,7 @@ class Portfolio extends Component {
             className="card"
             onClick={this.openPortfolioDetail.bind(this, 6)}
           >
-            <img
+            <Img
               src="http://mylamall.com/yeondam/portfolio-6.png"
               alt="portfolio"
             />
@@ -117,7 +129,7 @@ class Portfolio extends Component {
             className="card"
             onClick={this.openPortfolioDetail.bind(this, 7)}
           >
-            <img
+            <Img
               src="http://mylamall.com/yeondam/portfolio-7.png"
               alt="portfolio"
             />
@@ -126,7 +138,7 @@ class Portfolio extends Component {
             className="card"
             onClick={this.openPortfolioDetail.bind(this, 8)}
           >
-            <img
+            <Img
               src="https://cdn.dribbble.com/users/44585/screenshots/4926663/bug-lab-bee-ig.jpg.png"
               alt="portfolio"
             />
