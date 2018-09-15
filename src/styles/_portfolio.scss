@@ -14,6 +14,7 @@
 
     .card {
       @extend %card;
+      box-shadow: $box-shadow;
 
       img {
         width: 100%;

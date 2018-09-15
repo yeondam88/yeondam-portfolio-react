@@ -58,7 +58,7 @@ export const portfolioData = [
   {
     id: 7,
     title: "Expensify",
-    path: "http://mylamall.com/yeondam/portfolio-6.png",
+    path: "http://mylamall.com/yeondam/portfolio-7.png",
     link: "https://react-redux-expensify-tutorial.herokuapp.com/",
     description: "Expense tracking web app - with React/Redux",
     stacks: ["HTML5", "CSS3", "react", "redux", "Bootstrap 4", "Firebase"]

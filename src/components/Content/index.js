@@ -31,7 +31,7 @@ class Content extends Component {
               a Front End Engineer
             </Text>
             <Text className="tagline" pose={isVisible ? "hidden" : "visible"}>
-              a JavaScript Ninja
+              a JavaScript Lover
             </Text>
           </h1>
           <p>

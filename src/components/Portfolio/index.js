@@ -3,6 +3,8 @@ import Spinner from "../shared/Spinner";
 import Img from "react-image";
 import { portfolioData } from "../../data";
 
+import portfol from "../../img/portfolio-8.png";
+
 class Portfolio extends Component {
   state = {
     isActive: false,
@@ -139,7 +141,7 @@ class Portfolio extends Component {
             onClick={this.openPortfolioDetail.bind(this, 8)}
           >
             <Img
-              src="https://cdn.dribbble.com/users/44585/screenshots/4926663/bug-lab-bee-ig.jpg.png"
+              src="https://cdn.dribbble.com/users/1967053/screenshots/4612540/___1.png"
               alt="portfolio"
             />
           </div>
