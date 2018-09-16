@@ -69,7 +69,7 @@ class About extends Component {
                   KW International{" "}
                   <span className="about__container-item--link">
                     <a
-                      href="http://kwinternational.com"
+                      href="http://www.kwinternational.com/"
                       target="_blank"
                       rel="noopener noreferrer"
                     >

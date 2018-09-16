@@ -1,9 +1,6 @@
 import React, { Component } from "react";
-import Spinner from "../shared/Spinner";
 import Img from "react-image";
 import { portfolioData } from "../../data";
-
-import portfol from "../../img/portfolio-8.png";
 
 class Portfolio extends Component {
   state = {
@@ -66,19 +63,8 @@ class Portfolio extends Component {
           >
             <a>
               <Img
-                data-id="1"
                 src="http://mylamall.com/yeondam/portfolio-1.png"
                 alt="portfolio"
-                loader={
-                  <Spinner
-                    styles={{
-                      top: "50%",
-                      background: "black",
-                      width: "100%",
-                      height: "100%"
-                    }}
-                  />
-                }
               />
             </a>
           </div>
