@@ -3,8 +3,10 @@ export const portfolioData = [
     id: 1,
     title: "Airbnb looks Rental App",
     path: "http://mylamall.com/yeondam/portfolio-1.png",
-    description: "item 1 is made with React and Redux.",
+    description:
+      "Airbnb clone app with user authentication and registration, booking, modifing bookings fully features fullstack application.",
     link: "https://react-airbnb-style-app.herokuapp.com",
+    githubLink: "https://github.com/yeondam88/react-airbnb-style-app",
     stacks: [
       "react",
       "redux",
@@ -21,6 +23,7 @@ export const portfolioData = [
     path: "http://mylamall.com/yeondam/portfolio-2.png",
     description: "Social Web app for Developers",
     link: "https://mern-stack-devconnector.herokuapp.com/",
+    githubLink: "https://github.com/yeondam88/mern-stack-fullstack-app",
     stacks: ["react", "redux", "nodejs", "express", "mongoDB", "bulma"]
   },
   {
@@ -36,6 +39,7 @@ export const portfolioData = [
     title: "MovieMatch",
     path: "http://mylamall.com/yeondam/portfolio-4.png",
     link: "https://movie-match.netlify.com/",
+    githubLink: "https://github.com/yeondam88/moviematch",
     description: "Movie searching app with React/Redux",
     stacks: ["HTML5", "CSS3", "react", "redux", "Bootstrap 4"]
   },
@@ -44,6 +48,7 @@ export const portfolioData = [
     title: "Lyrics Finder",
     path: "http://mylamall.com/yeondam/portfolio-5.png",
     link: "https://lyric-finder-app.netlify.com",
+    githubLink: "https://github.com/yeondam88/lyric-search-app",
     description: "Finding Lyrics app with React (musixmatch API)",
     stacks: ["HTML5", "CSS3", "react", "redux", "Bootstrap 4"]
   },
@@ -52,6 +57,7 @@ export const portfolioData = [
     title: "Reddit Finder",
     path: "http://mylamall.com/yeondam/portfolio-6.png",
     link: "https://reddit-search-app.netlify.com",
+    githubLink: "https://github.com/yeondam88/reddit-search-app",
     description: "Simple Webapp with Reddit post search",
     stacks: ["HTML5", "CSS3", "Bootstrap4", "Vanilla JavaScript"]
   },
@@ -60,6 +66,7 @@ export const portfolioData = [
     title: "Expensify",
     path: "http://mylamall.com/yeondam/portfolio-7.png",
     link: "https://react-redux-expensify-tutorial.herokuapp.com/",
+    githubLink: "https://github.com/yeondam88/expensify-app",
     description: "Expense tracking web app - with React/Redux",
     stacks: ["HTML5", "CSS3", "react", "redux", "Bootstrap 4", "Firebase"]
   },
@@ -68,6 +75,8 @@ export const portfolioData = [
     title: "item 8",
     path:
       "https://cdn.dribbble.com/users/44585/screenshots/4926663/bug-lab-bee-ig.jpg.png",
+    link: "https://yeondampark.com",
+    githubLink: "https://github.com/yeondam88/yeandam-portfolio-react",
     description: "item 1 is made with React and Redux."
   }
 ];

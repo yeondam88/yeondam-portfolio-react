@@ -143,6 +143,7 @@
       max-width: 1250px;
       margin: 0 auto; }
     .portfolio .portfolio__detail .portfolio__detail-description {
+      min-width: 500px;
       max-height: 100%;
       padding: 0 40px 40px;
       overflow: auto; }
@@ -150,6 +151,13 @@
         font-size: 35px;
         line-height: 2.3;
         padding: 0; }
+      .portfolio .portfolio__detail .portfolio__detail-description .btn-group {
+        display: inline-block;
+        width: 100%; }
+        .portfolio .portfolio__detail .portfolio__detail-description .btn-group a {
+          display: inline-block;
+          width: 40%;
+          margin-right: 10px; }
     .portfolio .portfolio__detail .portfolio__detail-stacks {
       list-style: none;
       display: flex;

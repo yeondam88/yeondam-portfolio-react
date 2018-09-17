@@ -50,6 +50,20 @@ class Portfolio extends Component {
     );
   };
 
+  renderGithubLink = link => {
+    if (link === "" || link === undefined) {
+      return null;
+    }
+    return (
+      <a href={link} className="btn">
+        Github
+        <span>
+          <i class="fab fa-github" />
+        </span>
+      </a>
+    );
+  };
+
   render() {
     return (
       <section className="portfolio">
@@ -145,17 +159,19 @@ class Portfolio extends Component {
               <hr />
               <p>Stacks</p>
               {this.renderStacksList(this.state.activePortfolio.stacks)}
-              <a
-                href={this.state.activePortfolio.link}
-                className="btn"
-                style={{ width: "100%" }}
-                target="_blank"
-              >
-                See in action{" "}
-                <span>
-                  <i className="fas fa-desktop" style={{ color: "white" }} />
-                </span>
-              </a>
+              <div className="btn-group">
+                <a
+                  href={this.state.activePortfolio.link}
+                  className="btn"
+                  target="_blank"
+                >
+                  See in action{" "}
+                  <span>
+                    <i className="fas fa-desktop" style={{ color: "white" }} />
+                  </span>
+                </a>
+                {this.renderGithubLink(this.state.activePortfolio.githubLink)}
+              </div>
             </div>
             <img src={this.state.activePortfolio.path} alt="portfolio" />
           </div>

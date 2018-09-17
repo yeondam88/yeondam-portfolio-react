@@ -67,9 +67,21 @@
         padding: 0;
       }
 
+      min-width: 500px;
       max-height: 100%;
       padding: 0 40px 40px;
       overflow: auto;
+
+      .btn-group {
+        display: inline-block;
+        width: 100%;
+
+        a {
+          display: inline-block;
+          width: 40%;
+          margin-right: 10px;
+        }
+      }
     }
 
     .portfolio__detail-stacks {
