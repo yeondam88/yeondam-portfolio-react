@@ -1,0 +1,54 @@
+
+<svg width="1185px" height="582px" viewBox="0 0 1185 582" version="1.1" 
+  xmlns="http://www.w3.org/2000/svg" 
+  xmlns:xlink="http://www.w3.org/1999/xlink">
+  <!-- Generator: Sketch 51.2 (57519) - http://www.bohemiancoding.com/sketch -->
+  <desc>Created with Sketch.</desc>
+  <defs>
+    <filter x="-27.4%" y="-28.5%" width="154.7%" height="156.9%" filterUnits="objectBoundingBox" id="filter-1">
+      <feGaussianBlur stdDeviation="2.37165179" in="SourceGraphic"></feGaussianBlur>
+    </filter>
+    <filter x="-50.2%" y="-50.2%" width="200.4%" height="200.4%" filterUnits="objectBoundingBox" id="filter-2">
+      <feGaussianBlur stdDeviation="2.84598214" in="SourceGraphic"></feGaussianBlur>
+    </filter>
+    <filter x="-38.1%" y="-38.1%" width="176.2%" height="176.2%" filterUnits="objectBoundingBox" id="filter-3">
+      <feGaussianBlur stdDeviation="4.31919643" in="SourceGraphic"></feGaussianBlur>
+    </filter>
+    <filter x="-27.4%" y="-28.5%" width="154.7%" height="156.9%" filterUnits="objectBoundingBox" id="filter-4">
+      <feGaussianBlur stdDeviation="2.37165179" in="SourceGraphic"></feGaussianBlur>
+    </filter>
+    <filter x="-39.0%" y="-48.8%" width="178.0%" height="197.5%" filterUnits="objectBoundingBox" id="filter-5">
+      <feGaussianBlur stdDeviation="1.93359375" in="SourceGraphic"></feGaussianBlur>
+    </filter>
+    <filter x="-50.2%" y="-50.2%" width="200.4%" height="200.4%" filterUnits="objectBoundingBox" id="filter-6">
+      <feGaussianBlur stdDeviation="2.84598214" in="SourceGraphic"></feGaussianBlur>
+    </filter>
+  </defs>
+  <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+    <g id="Raaz-Das" transform="translate(-132.000000, -268.000000)">
+      <g id="Thank-you-for-Downloading-this-file" transform="translate(-22.000000, -36.000000)">
+        <g id="Shapes" transform="translate(160.000000, 164.000000)">
+          <g id="shapes" transform="translate(1255.000000, 271.500000) scale(-1, 1) translate(-1255.000000, -271.500000) translate(892.000000, 0.000000)">
+            <rect id="Rectangle-3" stroke="#74F7DA" stroke-width="4" opacity="0.200000003" filter="url(#filter-1)" x="702" y="357" width="22" height="21"></rect>
+            <circle id="Oval-2" stroke="#FE9192" stroke-width="4" opacity="0.400000006" filter="url(#filter-2)" cx="669.5" cy="183.5" r="10.5"></circle>
+            <circle id="Oval-2-Copy" stroke="#FE9192" stroke-width="6" cx="454" cy="531" r="12"></circle>
+          </g>
+          <polygon id="Triangle" fill="#E94749" points="514 483 566 569 462 569"></polygon>
+          <circle id="Oval" fill="#F6DE21" cx="201" cy="447" r="59"></circle>
+          <rect id="Rectangle" fill="#38E0D0" filter="url(#filter-3)" x="438" y="151" width="34" height="34"></rect>
+          <rect id="Rectangle-Copy" fill="#38E0D0" x="508" y="241" width="88" height="88"></rect>
+          <g id="shapes" transform="translate(0.000000, 198.000000)">
+            <rect id="Rectangle-3" stroke="#74F7DA" stroke-width="4" opacity="0.5" filter="url(#filter-4)" x="702" y="322" width="22" height="21"></rect>
+            <rect id="Rectangle-3-Copy" stroke="#74F7DA" stroke-width="6" x="240" y="3" width="23" height="22"></rect>
+            <rect id="Rectangle-3-Copy-2" stroke="#F8D8FF" stroke-width="6" x="359" y="499" width="23" height="22"></rect>
+            <polygon id="Triangle-2" stroke="#A2CAFF" stroke-width="6" points="739 135 753 158 725 158"></polygon>
+            <polygon id="Triangle-2-Copy" stroke="#F9E922" stroke-width="4" filter="url(#filter-5)" points="120 338 130 354 110 354"></polygon>
+            <polygon id="Triangle-2-Copy-2" stroke="#A2CAFF" stroke-width="6" points="14 5 28 28 0 28"></polygon>
+            <circle id="Oval-2" stroke="#FE9192" stroke-width="4" opacity="0.400000006" filter="url(#filter-6)" cx="409.5" cy="118.5" r="10.5"></circle>
+            <circle id="Oval-2-Copy" stroke="#FE9192" stroke-width="6" cx="551" cy="403" r="12"></circle>
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

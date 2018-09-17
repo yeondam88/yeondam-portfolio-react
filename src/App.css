@@ -195,52 +195,33 @@
     transition-delay: 0.5s; }
 
 .skills {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
   padding-top: 10em;
   padding-bottom: 10em;
   text-align: center; }
   .skills .skills__info {
     max-width: 1400px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    display: grid;
+    grid-gap: 1.5vw;
+    grid-template-columns: repeat(4, 1fr);
     margin-bottom: 48px;
-    position: relative; }
-    .skills .skills__info .skills__info-list {
-      list-style: none;
-      display: flex;
-      justify-content: center;
-      flex-direction: row;
-      text-align: center; }
-      .skills .skills__info .skills__info-list--item {
-        display: inline-block;
-        margin: 10px 20px 10px 20px;
-        min-width: 100px;
-        padding: 2em; }
-        .skills .skills__info .skills__info-list--item h3 {
-          margin-bottom: .5em; }
-        .skills .skills__info .skills__info-list--item i {
-          font-size: 3em;
-          color: #6c63ff;
-          transition: all .3s ease; }
-          .skills .skills__info .skills__info-list--item i:hover {
-            cursor: pointer;
-            color: rgba(0, 0, 0, 0.7);
-            transform: translateY(-10px); }
-    .skills .skills__info:before {
-      content: '';
-      width: 70%;
-      height: 100%;
-      box-shadow: 0 20px 36px -4px rgba(157, 166, 186, 0.4);
-      position: absolute;
-      border-top-left-radius: 120px;
-      border-bottom-left-radius: 120px;
-      border-top-right-radius: 120px;
-      border-bottom-right-radius: 120px;
-      bottom: -50%;
-      left: 50%;
-      right: 50%;
-      transform: translate(-50%, -50%);
-      z-index: -99; }
+    position: relative;
+    padding: 4em;
+    transition: all .3s ease-in-out; }
+    .skills .skills__info:hover {
+      box-shadow: 0 20px 36px -4px rgba(157, 166, 186, 0.4); }
+    .skills .skills__info--item h3 {
+      font-size: 1.3em; }
+    .skills .skills__info--item i {
+      padding: .5em;
+      font-size: 3em;
+      color: #6c63ff;
+      transition: all .2s ease-out; }
+      .skills .skills__info--item i:hover {
+        transform: scale(1.2); }
 
 .about {
   width: 100%;

@@ -2,6 +2,8 @@ import React, { Component } from "react";
 import Img from "react-image";
 import { portfolioData } from "../../data";
 
+import closeIcon from "../../img/close.svg";
+
 class Portfolio extends Component {
   state = {
     isActive: false,
@@ -136,7 +138,7 @@ class Portfolio extends Component {
           className={`portfolio__detail ${this.state.isActive ? "open" : null}`}
         >
           <div onClick={this.closePortfolioDetail}>
-            <i className="close fas fa-times" />
+            <img className="close" src={closeIcon} alt="close button" />
           </div>
           <div className="portfolio__detail-row">
             <div className="portfolio__detail-description">
