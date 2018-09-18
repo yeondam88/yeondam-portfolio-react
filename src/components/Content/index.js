@@ -51,12 +51,7 @@ class Content extends Component {
             </button>
           </a>
         </div>
-        <div className="content__image">
-          <img
-            src="https://vijayverma.co/images/avatar-2.png"
-            alt="Yeondam Park"
-          />
-        </div>
+        <div className="content__image" />
       </section>
     );
   }

@@ -23,12 +23,7 @@ class About extends Component {
               Always look for new things and learn fast
             </p>
           </div>
-          <div className="content__image">
-            <img
-              src="https://vijayverma.co/images/avatar-2.png"
-              alt="Yeondam Park"
-            />
-          </div>
+          <div className="content__image" />
         </section>
         <section className="about">
           <h2 className="section__title">
