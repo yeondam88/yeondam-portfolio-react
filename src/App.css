@@ -70,7 +70,6 @@
       height: 35px;
       margin-right: 25px;
       position: absolute;
-      top: 0;
       right: 0; }
   .header__section .mobile__dropdown {
     width: 100%;
@@ -465,7 +464,11 @@
   .form__area {
     width: 90% !important; } }
 
-.resume {
+.resume__title {
+  font-size: 2em;
+  text-align: center; }
+
+.resume__container {
   padding-top: 4em;
   width: calc(100% - 10%);
   max-width: 1400px;
@@ -474,13 +477,14 @@
   margin-right: auto;
   display: flex;
   justify-content: center; }
-  .resume .resume__area {
+  .resume__container .resume__area {
     box-shadow: 0 20px 36px -4px rgba(157, 166, 186, 0.4); }
-  .resume .resume__page {
+  .resume__container .resume__page {
     height: 100% !important; }
 
 @media (max-width: 769px) {
-  .resume {
+  .resume__container {
+    padding-top: 0;
     width: 100% !important;
     max-width: 100% !important; }
   .react-pdf__Page__canvas {
@@ -745,4 +749,6 @@ body.stripes {
 
 @media (max-width: 769px) {
   body.stripes {
-    background: none; } }
+    background: none; }
+  .container {
+    overflow: hidden; } }

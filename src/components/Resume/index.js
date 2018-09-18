@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { Document, Page } from "react-pdf";
+import Emoji from "../shared/Emoji";
 import resume from "../../img/lloyd_park_resume.pdf";
 
 class Resume extends Component {
@@ -15,15 +16,27 @@ class Resume extends Component {
   render() {
     const { pageNumber } = this.state;
     return (
-      <div className="resume">
-        <Document
-          file={resume}
-          onLoadSuccess={this.onDocumentLoadSuccess}
-          className="resume__area"
-        >
-          <Page pageNumber={pageNumber} width={1000} className="resume__page" />
-        </Document>
-      </div>
+      <React.Fragment>
+        <div className="resume__title">
+          <h1>
+            Resume
+            <Emoji symbol="👻" />
+          </h1>
+        </div>
+        <div className="resume__container">
+          <Document
+            file={resume}
+            onLoadSuccess={this.onDocumentLoadSuccess}
+            className="resume__area"
+          >
+            <Page
+              pageNumber={pageNumber}
+              width={1000}
+              className="resume__page"
+            />
+          </Document>
+        </div>
+      </React.Fragment>
     );
   }
 }
