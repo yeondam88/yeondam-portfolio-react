@@ -6,7 +6,7 @@
   align-items: center;
   flex-wrap: wrap;
 
-  .content__about {
+  .content__page-home {
     width: 50%;
     position: relative;
 
@@ -39,5 +39,25 @@
     img {
       width: 100%;
     }
+  }
+}
+
+@media (max-width: 769px) {
+  .content__page-home {
+    width: 100% !important;
+    text-align: center;
+
+    .tagline {
+      left: 10%;
+      font-size: .8em;
+    }
+
+    .btn {
+      width: 50%;
+    }
+  }
+
+  .content__image {
+    display: none;
   }
 }

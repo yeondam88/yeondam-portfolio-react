@@ -1,3 +1,25 @@
+.content__page-about {
+  width: 50%;
+  position: relative;
+
+  h1 {
+    font-size: 48px;
+    font-weight: 400;
+    margin-bottom: 24px;
+    text-shadow: 0 .13rem .13rem rgba(108, 99, 255, 0.4);
+  }
+
+  p {
+    color: $primary-light-text-color;
+    margin-top: 5em;
+  }
+
+  &--description {
+    color: $primary-text-color !important;
+    font-size: 1.2em;
+  }
+}
+
 .about {
   width: 100%;
   position: relative;
@@ -44,6 +66,30 @@
           color: $primary-text-color;
         }
       }
+    }
+  }
+}
+
+@media (max-width: 769px) {
+  .content__page-about {
+    width: 100% !important;
+    text-align: center;
+
+    &--description {
+      width: 100%;
+      margin-top: 0 !important;
+    }
+  }
+
+  .content__image {
+    display: none;
+  }
+
+  .about {
+    padding: 0 !important;
+
+    .about__container {
+      grid-template-columns: 100%;
     }
   }
 }

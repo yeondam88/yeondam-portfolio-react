@@ -23,7 +23,7 @@ class Content extends Component {
     const { isVisible } = this.state;
     return (
       <section className="content">
-        <div className="content__about">
+        <div className="content__page-home">
           <h1>
             I'm Yeondam Park
             <br />

@@ -1,6 +1,9 @@
 import React, { Component } from "react";
-import Img from "react-image";
 import { portfolioData } from "../../data";
+import PortfolioItem from "./PortfolioItem";
+import MobilePorfolio from "./MobilePortfolio";
+import closeIcon from "../../img/close.svg";
+import PortfolioDetail from "./PortfolioDetail";
 
 class Portfolio extends Component {
   state = {
@@ -8,6 +11,18 @@ class Portfolio extends Component {
     portfolios: portfolioData,
     activePortfolio: {}
   };
+
+  componentDidMount() {
+    const body = document.querySelector("body");
+    body.addEventListener("click", this.closePortfolioDetail);
+    console.log("body clicked!");
+  }
+
+  componentWillUnmount() {
+    const body = document.querySelector("body");
+    body.removeEventListener("click", this.closePortfolioDetail);
+    console.log("event removed!!");
+  }
 
   openPortfolioDetail = (id, e) => {
     this.setState({ isActive: true });
@@ -58,124 +73,72 @@ class Portfolio extends Component {
       <a href={link} className="btn">
         Github
         <span>
-          <i class="fab fa-github" />
+          <i className="fab fa-github" />
         </span>
       </a>
     );
   };
 
   render() {
+    const { isActive, activePortfolio } = this.state;
     return (
       <section className="portfolio">
         <h2 id="portfolio" className="section__title">
           <strong>Portfolio</strong>
         </h2>
         <div className="portfolio__container">
-          <div
-            className="card"
-            onClick={this.openPortfolioDetail.bind(this, 1)}
-          >
-            <a>
-              <Img
-                src="http://mylamall.com/yeondam/portfolio-1.png"
-                alt="portfolio"
-              />
-            </a>
-          </div>
-          <div
-            className="card"
-            onClick={this.openPortfolioDetail.bind(this, 2)}
-          >
-            <Img
-              src="http://mylamall.com/yeondam/portfolio-2.png"
-              alt="portfolio"
-            />
-          </div>
-          <div
-            className="card"
-            onClick={this.openPortfolioDetail.bind(this, 3)}
-          >
-            <Img
-              src="http://mylamall.com/yeondam/portfolio-3.png"
-              alt="portfolio"
-            />
-          </div>
-          <div
-            className="card"
-            onClick={this.openPortfolioDetail.bind(this, 4)}
-          >
-            <Img
-              src="http://mylamall.com/yeondam/portfolio-4.png"
-              alt="portfolio"
-            />
-          </div>
-          <div
-            className="card"
-            onClick={this.openPortfolioDetail.bind(this, 5)}
-          >
-            <Img
-              src="http://mylamall.com/yeondam/portfolio-5.png"
-              alt="portfolio"
-            />
-          </div>
-          <div
-            className="card"
-            onClick={this.openPortfolioDetail.bind(this, 6)}
-          >
-            <Img
-              src="http://mylamall.com/yeondam/portfolio-6.png"
-              alt="portfolio"
-            />
-          </div>
-          <div
-            className="card"
-            onClick={this.openPortfolioDetail.bind(this, 7)}
-          >
-            <Img
-              src="http://mylamall.com/yeondam/portfolio-7.png"
-              alt="portfolio"
-            />
-          </div>
-          <div
-            className="card"
-            onClick={this.openPortfolioDetail.bind(this, 8)}
-          >
-            <Img
-              src="https://cdn.dribbble.com/users/1967053/screenshots/4612540/___1.png"
-              alt="portfolio"
-            />
-          </div>
+          <PortfolioItem
+            openPortfolio={this.openPortfolioDetail.bind(this, 1)}
+            src={"http://mylamall.com/yeondam/portfolio-1.png"}
+            alt="airbnb style react app"
+          />
+          <PortfolioItem
+            openPortfolio={this.openPortfolioDetail.bind(this, 2)}
+            src={"http://mylamall.com/yeondam/portfolio-2.png"}
+            alt="airbnb style react app"
+          />
+          <PortfolioItem
+            openPortfolio={this.openPortfolioDetail.bind(this, 3)}
+            src={"http://mylamall.com/yeondam/portfolio-3.png"}
+            alt="airbnb style react app"
+          />
+          <PortfolioItem
+            openPortfolio={this.openPortfolioDetail.bind(this, 4)}
+            src={"http://mylamall.com/yeondam/portfolio-4.png"}
+            alt="airbnb style react app"
+          />
+          <PortfolioItem
+            openPortfolio={this.openPortfolioDetail.bind(this, 5)}
+            src={"http://mylamall.com/yeondam/portfolio-5.png"}
+            alt="airbnb style react app"
+          />
+          <PortfolioItem
+            openPortfolio={this.openPortfolioDetail.bind(this, 6)}
+            src={"http://mylamall.com/yeondam/portfolio-6.png"}
+            alt="airbnb style react app"
+          />
+          <PortfolioItem
+            openPortfolio={this.openPortfolioDetail.bind(this, 7)}
+            src={"http://mylamall.com/yeondam/portfolio-7.png"}
+            alt="airbnb style react app"
+          />
+          <PortfolioItem
+            openPortfolio={this.openPortfolioDetail.bind(this, 8)}
+            src={
+              "https://cdn.dribbble.com/users/1967053/screenshots/4612540/___1.png"
+            }
+            alt="airbnb style react app"
+          />
         </div>
-        <div
-          className={`portfolio__detail ${this.state.isActive ? "open" : null}`}
-        >
-          <div onClick={this.closePortfolioDetail}>
-            <i className="close fas fa-times" />
-          </div>
-          <div className="portfolio__detail-row">
-            <div className="portfolio__detail-description">
-              <h1>{this.state.activePortfolio.title}</h1>
-              <p>{this.state.activePortfolio.description}</p>
-              <hr />
-              <p>Stacks</p>
-              {this.renderStacksList(this.state.activePortfolio.stacks)}
-              <div className="btn-group">
-                <a
-                  href={this.state.activePortfolio.link}
-                  className="btn"
-                  target="_blank"
-                >
-                  See in action{" "}
-                  <span>
-                    <i className="fas fa-desktop" style={{ color: "white" }} />
-                  </span>
-                </a>
-                {this.renderGithubLink(this.state.activePortfolio.githubLink)}
-              </div>
-            </div>
-            <img src={this.state.activePortfolio.path} alt="portfolio" />
-          </div>
-        </div>
+        <PortfolioDetail
+          isActive={isActive}
+          activePortfolio={activePortfolio}
+          closeIcon={closeIcon}
+          closePortfolioDetail={this.closePortfolioDetail}
+          renderGithubLink={this.renderGithubLink}
+          renderStacksList={this.renderStacksList}
+        />
+        <MobilePorfolio />
       </section>
     );
   }

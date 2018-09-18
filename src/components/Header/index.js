@@ -2,6 +2,14 @@ import React, { Component } from "react";
 import { Link } from "react-router-dom";
 
 class Header extends Component {
+  state = {
+    isMenuClick: false
+  };
+
+  menuToggle = () => {
+    this.setState({ isMenuClick: !this.state.isMenuClick });
+  };
+
   render() {
     return (
       <header className="header__section">
@@ -24,7 +32,34 @@ class Header extends Component {
               <Link to="/resume">Resume</Link>
             </li>
           </ul>
+          <div className="nav__list-mobile" onClick={this.menuToggle} />
         </nav>
+        {this.state.isMenuClick && (
+          <div className="mobile__dropdown">
+            <ul className="mobile__dropdown-list">
+              <li>
+                <Link to="/" onClick={this.menuToggle}>
+                  Home
+                </Link>
+              </li>
+              <li>
+                <Link to="/about" onClick={this.menuToggle}>
+                  About
+                </Link>
+              </li>
+              <li>
+                <Link to="/contact" onClick={this.menuToggle}>
+                  Contact
+                </Link>
+              </li>
+              <li>
+                <Link to="/resume" onClick={this.menuToggle}>
+                  Resume
+                </Link>
+              </li>
+            </ul>
+          </div>
+        )}
       </header>
     );
   }

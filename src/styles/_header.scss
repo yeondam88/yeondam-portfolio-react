@@ -59,5 +59,72 @@
         }
       }
     }
+
+    .nav__list-mobile {
+      &:before {
+        content: "";
+        background: url(img/menu.svg);
+        width: 35px;
+        height: 35px;
+        margin-right: 25px;
+        position: absolute;
+        top: 0;
+        right: 0;
+      }
+    }
+  }
+
+  .mobile__dropdown {
+    width: 100%;
+    display: flex;
+    background: #8468F5;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 1em;
+
+    .mobile__dropdown-list {
+      list-style: none;
+      padding-top: 1em;
+      padding-bottom: 1em;
+
+      li {
+        margin-top: 1em;
+        margin-bottom: 1em;
+
+        a {
+          font-size: 2em;
+          text-decoration: none;
+          color: white;
+          @include textShadow($primary-background-color);
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 769px) {
+  .header__section {
+    margin-top: 2em;
+  }
+
+  .nav__logo {
+    &-item {
+      margin-left: 20px;
+    }
+
+    h1 {
+      display: none;
+    }
+  }
+
+  .nav__list {
+    display: none;
+  }
+}
+
+@media (min-width: 770px) {
+  .nav__list-mobile {
+    display: none;
   }
 }

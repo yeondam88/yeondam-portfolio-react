@@ -6,14 +6,15 @@ class About extends Component {
     return (
       <React.Fragment>
         <section className="content">
-          <div className="content__about">
+          <div className="content__page-about">
             <h1>
               Hi, <Emoji symbol="👋" label="hello" />
               <br />
-              My name is <strong className="tagline">Yeondam Park</strong>
+              My name is <br />
+              <strong>Yeondam Park</strong>
               <br />
             </h1>
-            <p className="content__about-description">
+            <p className="content__page-about--description">
               I' m Self-taught Front End Engineer who is passionate about
               <br />
               building a beautiful things with the latest front-end

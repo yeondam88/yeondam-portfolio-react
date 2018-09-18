@@ -13,16 +13,19 @@
 
     .skills__info-list {
       list-style: none;
-      display: flex;
-      justify-content: center;
-      flex-direction: row;
+      display: grid;
+      grid-template-columns: 25% 25% 25% 25%;
+      margin: 0 auto;
+      width: 50%;
       text-align: center;
 
       &--item {
-        display: inline-block;
-        margin: 10px 20px 10px 20px;
-        min-width: 100px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
         padding: 2em;
+        box-sizing: border-box;
 
         h3 {
           margin-bottom: .5em;
@@ -58,5 +61,17 @@
       transform: translate(-50%, -50%);
       z-index: -99;
     }
+  }
+}
+
+/* Portrait and Landscape */
+@media (max-width: 769px) {
+  .skills {
+    padding-top: 2em;
+    padding-bottom: 0;
+  }
+
+  .skills__info-list {
+    grid-template-columns: 50% 50% !important;
   }
 }

@@ -175,3 +175,9 @@ body.stripes {
     transform: translateY(-5px);
   }
 }
+
+@media (max-width: 769px) {
+  body.stripes {
+    background: none;
+  }
+}

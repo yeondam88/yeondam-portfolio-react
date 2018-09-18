@@ -141,6 +141,37 @@
     -webkit-transition-delay: 0.5s;
     transition-delay: 0.5s;
   }
+}
 
+.mobile__btn-wrapper {
+  a {
+    margin-right: 10px;
+  }
+}
 
+/* Portrait and Landscape */
+@media (max-width: 769px) {
+  .portfolio__container {
+    display: none !important;
+  }
+
+  .portfolio__detail-mobile {
+    width: 100%;
+
+    .card {
+      width: 90%;
+      margin: 2em auto;
+      box-shadow: $box-shadow;
+    }
+
+    .card img {
+      width: 100%;
+    }
+  }
+}
+
+@media (min-width: 770px) {
+  .portfolio__detail-mobile {
+    display: none;
+  }
 }
