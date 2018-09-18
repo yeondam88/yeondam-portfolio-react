@@ -80,7 +80,7 @@ class Portfolio extends Component {
   };
 
   render() {
-    const { isActive, activePortfolio } = this.state;
+    const { isActive, activePortfolio, portfolios } = this.state;
     return (
       <section className="portfolio">
         <h2 id="portfolio" className="section__title">
@@ -122,13 +122,6 @@ class Portfolio extends Component {
             src={"http://mylamall.com/yeondam/portfolio-7.png"}
             alt="airbnb style react app"
           />
-          <PortfolioItem
-            openPortfolio={this.openPortfolioDetail.bind(this, 8)}
-            src={
-              "https://cdn.dribbble.com/users/1967053/screenshots/4612540/___1.png"
-            }
-            alt="airbnb style react app"
-          />
         </div>
         <PortfolioDetail
           isActive={isActive}
@@ -138,7 +131,7 @@ class Portfolio extends Component {
           renderGithubLink={this.renderGithubLink}
           renderStacksList={this.renderStacksList}
         />
-        <MobilePorfolio />
+        <MobilePorfolio portfolios={portfolios} />
       </section>
     );
   }

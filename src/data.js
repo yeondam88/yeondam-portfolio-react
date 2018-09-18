@@ -69,14 +69,5 @@ export const portfolioData = [
     githubLink: "https://github.com/yeondam88/expensify-app",
     description: "Expense tracking web app - with React/Redux",
     stacks: ["HTML5", "CSS3", "react", "redux", "Bootstrap 4", "Firebase"]
-  },
-  {
-    id: 8,
-    title: "item 8",
-    path:
-      "https://cdn.dribbble.com/users/44585/screenshots/4926663/bug-lab-bee-ig.jpg.png",
-    link: "https://yeondampark.com",
-    githubLink: "https://github.com/yeondam88/yeandam-portfolio-react",
-    description: "item 1 is made with React and Redux."
   }
 ];
