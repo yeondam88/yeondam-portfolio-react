@@ -6,7 +6,7 @@ const Contact = () => {
   return (
     <React.Fragment>
       <section className="content">
-        <div className="content__about">
+        <div className="content__page-home">
           <h1>
             Hey, <Emoji symbol="😎" label="smile face" />
             <br />
