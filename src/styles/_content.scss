@@ -43,13 +43,23 @@
 }
 
 @media (max-width: 769px) {
+  .content {
+    margin-bottom: 0;
+  }
+
   .content__page-home {
     width: 100% !important;
     text-align: center;
 
+    h1 {
+      font-size: 2.5em !important;
+      font-weight: 700 !important;
+    }
+
     .tagline {
-      left: 10%;
-      font-size: .8em;
+      left: 0;
+      right: 0;
+      font-size: .6em;
     }
 
     .btn {
