@@ -53,10 +53,10 @@ class Portfolio extends Component {
       return null;
     }
     return (
-      <ul className="portfolio__detail-stacks">
+      <ul className="portfolio__detail-stacks tags">
         {stacks.map((stack, index) => {
           return (
-            <li className="portfolio__detail-stacks--item" key={index}>
+            <li className="portfolio__detail-stacks--item tag" key={index}>
               {stack}
             </li>
           );

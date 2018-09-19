@@ -14,10 +14,12 @@ class Header extends Component {
     return (
       <header className="header__section">
         <nav className="nav">
-          <div className="nav__logo">
-            <div className="nav__logo-item">Y</div>
-            <h1>Yeondam Park</h1>
-          </div>
+          <Link to="/" style={{ textDecoration: "none", color: "#111720" }}>
+            <div className="nav__logo">
+              <div className="nav__logo-item">Y</div>
+              <h1>Yeondam Park</h1>
+            </div>
+          </Link>
           <ul className="nav__list">
             <li>
               <Link to="/">Home</Link>

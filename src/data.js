@@ -1,7 +1,7 @@
 export const portfolioData = [
   {
     id: 1,
-    title: "Airbnb looks Rental App",
+    title: "Airbnb clone Rental App",
     path: "http://mylamall.com/yeondam/portfolio-1.png",
     description:
       "Airbnb clone app with user authentication and registration, booking, modifing bookings fully features fullstack application.",
@@ -19,7 +19,7 @@ export const portfolioData = [
   },
   {
     id: 2,
-    title: "Devconnect Social media App",
+    title: "Social media App for Devs",
     path: "http://mylamall.com/yeondam/portfolio-2.png",
     description: "Social Web app for Developers",
     link: "https://mern-stack-devconnector.herokuapp.com/",

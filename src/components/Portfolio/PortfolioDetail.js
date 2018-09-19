@@ -17,8 +17,6 @@ const PortfolioDetail = ({
         <div className="portfolio__detail-description">
           <h1>{activePortfolio.title}</h1>
           <p>{activePortfolio.description}</p>
-          <hr />
-          <p>Stacks</p>
           {renderStacksList(activePortfolio.stacks)}
           <div className="btn-group">
             <a href={activePortfolio.link} className="btn" target="_blank">
@@ -30,7 +28,9 @@ const PortfolioDetail = ({
             {renderGithubLink(activePortfolio.githubLink)}
           </div>
         </div>
-        <img src={activePortfolio.path} alt="portfolio" />
+        <div className="portfolio__detail-image">
+          <img src={activePortfolio.path} alt="portfolio" />
+        </div>
       </div>
     </div>
   );
