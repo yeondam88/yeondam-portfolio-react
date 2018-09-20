@@ -89,42 +89,42 @@ class Portfolio extends Component {
         <div className="portfolio__container">
           <PortfolioItem
             openPortfolio={this.openPortfolioDetail.bind(this, 1)}
-            src={require("../../img/portfolio-1.png")}
+            src={require("../../img/portfolio_1.jpg")}
             alt="airbnb style react app"
           />
           <PortfolioItem
             openPortfolio={this.openPortfolioDetail.bind(this, 2)}
-            src={require("../../img/portfolio-2.png")}
+            src={require("../../img/portfolio_2.jpg")}
             alt="airbnb style react app"
           />
           <PortfolioItem
             openPortfolio={this.openPortfolioDetail.bind(this, 3)}
-            src={require("../../img/portfolio-3.png")}
+            src={require("../../img/portfolio_3.jpg")}
             alt="airbnb style react app"
           />
           <PortfolioItem
             openPortfolio={this.openPortfolioDetail.bind(this, 4)}
-            src={require("../../img/portfolio-4.png")}
+            src={require("../../img/portfolio_4.jpg")}
             alt="airbnb style react app"
           />
           <PortfolioItem
             openPortfolio={this.openPortfolioDetail.bind(this, 5)}
-            src={require("../../img/portfolio-5.png")}
+            src={require("../../img/portfolio_5.jpg")}
             alt="airbnb style react app"
           />
           <PortfolioItem
             openPortfolio={this.openPortfolioDetail.bind(this, 6)}
-            src={require("../../img/portfolio-6.png")}
+            src={require("../../img/portfolio_6.jpg")}
             alt="airbnb style react app"
           />
           <PortfolioItem
             openPortfolio={this.openPortfolioDetail.bind(this, 7)}
-            src={require("../../img/portfolio-7.png")}
+            src={require("../../img/portfolio_7.jpg")}
             alt="airbnb style react app"
           />
           <PortfolioItem
             openPortfolio={this.openPortfolioDetail.bind(this, 8)}
-            src={require("../../img/portfolio-8.png")}
+            src={require("../../img/portfolio_8.jpg")}
             alt="airbnb style react app"
           />
         </div>
