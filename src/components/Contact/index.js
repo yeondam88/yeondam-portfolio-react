@@ -1,6 +1,5 @@
 import React from "react";
 import Emoji from "../shared/Emoji";
-import img from "../../img/paper-plane.svg";
 
 const Contact = () => {
   return (

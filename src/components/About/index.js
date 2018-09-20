@@ -15,12 +15,17 @@ class About extends Component {
               <br />
             </h1>
             <p className="content__page-about--description">
-              I' m Self-taught Front End Engineer who is passionate about
+              I' m Self-taught Front End Engineer. My passion is to
               <br />
-              building a beautiful things with the latest front-end
-              technologies.
+              build a beautiful things with the modern technologies.
               <br />
-              Always look for new things and learn fast
+              <br />
+              My favorite and primary programming language is{" "}
+              <span className="text-bg" style={{ position: "relative" }}>
+                JavaScript
+              </span>
+              . I like to do mostly the Front-End, but with Node I do the
+              backend programming as well.
             </p>
           </div>
           <div className="content__image" />

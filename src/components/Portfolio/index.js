@@ -89,37 +89,42 @@ class Portfolio extends Component {
         <div className="portfolio__container">
           <PortfolioItem
             openPortfolio={this.openPortfolioDetail.bind(this, 1)}
-            src={"http://mylamall.com/yeondam/portfolio-1.png"}
+            src={require("../../img/portfolio-1.png")}
             alt="airbnb style react app"
           />
           <PortfolioItem
             openPortfolio={this.openPortfolioDetail.bind(this, 2)}
-            src={"http://mylamall.com/yeondam/portfolio-2.png"}
+            src={require("../../img/portfolio-2.png")}
             alt="airbnb style react app"
           />
           <PortfolioItem
             openPortfolio={this.openPortfolioDetail.bind(this, 3)}
-            src={"http://mylamall.com/yeondam/portfolio-3.png"}
+            src={require("../../img/portfolio-3.png")}
             alt="airbnb style react app"
           />
           <PortfolioItem
             openPortfolio={this.openPortfolioDetail.bind(this, 4)}
-            src={"http://mylamall.com/yeondam/portfolio-4.png"}
+            src={require("../../img/portfolio-4.png")}
             alt="airbnb style react app"
           />
           <PortfolioItem
             openPortfolio={this.openPortfolioDetail.bind(this, 5)}
-            src={"http://mylamall.com/yeondam/portfolio-5.png"}
+            src={require("../../img/portfolio-5.png")}
             alt="airbnb style react app"
           />
           <PortfolioItem
             openPortfolio={this.openPortfolioDetail.bind(this, 6)}
-            src={"http://mylamall.com/yeondam/portfolio-6.png"}
+            src={require("../../img/portfolio-6.png")}
             alt="airbnb style react app"
           />
           <PortfolioItem
             openPortfolio={this.openPortfolioDetail.bind(this, 7)}
-            src={"http://mylamall.com/yeondam/portfolio-7.png"}
+            src={require("../../img/portfolio-7.png")}
+            alt="airbnb style react app"
+          />
+          <PortfolioItem
+            openPortfolio={this.openPortfolioDetail.bind(this, 8)}
+            src={require("../../img/portfolio-8.png")}
             alt="airbnb style react app"
           />
         </div>

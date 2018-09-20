@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import img from "../../img/paper-plane.svg";
 import posed from "react-pose";
+import TypedText from "./Typed";
 
 const Text = posed.strong({
   visible: { opacity: 1 },
@@ -27,12 +28,13 @@ class Content extends Component {
           <h1>
             I'm Yeondam Park
             <br />
-            <Text className="tagline" pose={isVisible ? "visible" : "hidden"}>
-              a Front End Engineer
-            </Text>
-            <Text className="tagline" pose={isVisible ? "hidden" : "visible"}>
-              a JavaScript Lover
-            </Text>
+            <TypedText
+              strings={[
+                "Front-End Engineer.",
+                "JavaScript Enthusiast.",
+                "Fullstack Engineer."
+              ]}
+            />
           </h1>
           <p>
             Love to building a beautiful things with <strong>JavaScript</strong>

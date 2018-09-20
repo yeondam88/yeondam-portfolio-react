@@ -15,10 +15,12 @@
     .card {
       @extend %card;
       box-shadow: $box-shadow;
+      max-height: 150px;
 
       img {
         width: 100%;
         position: relative;
+        max-height: 150px;
       }
 
       &:hover {
