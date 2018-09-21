@@ -434,9 +434,9 @@
         height: 100%;
         position: absolute;
         background: #b4b0ff;
-        transform: rotate(-2deg);
         opacity: 70%;
-        z-index: -1; }
+        z-index: -1;
+        animation: skewAnim 2s ease infinite; }
 
 .about {
   width: 100%;
@@ -486,6 +486,16 @@
     .about .about__container {
       grid-template-columns: 100%;
       padding: 1em; } }
+
+@keyframes skewAnim {
+  0% {
+    transform: rotate(0deg) scale(1); }
+  25% {
+    transform: rotate(-4deg) scale(1.1); }
+  50% {
+    transform: rotate(0deg) scale(1.1); }
+  100% {
+    transform: rotate(4deg) scale(1); } }
 
 .form__area {
   padding-top: 1em;
@@ -544,7 +554,7 @@
 
 @media (max-width: 769px) {
   .content__page-home h1 {
-    font-size: 3em !important; }
+    font-size: 2em !important; }
   .form__area {
     width: 90% !important; }
     .form__area .form__area-heading h2 {
