@@ -1,5 +1,15 @@
 import React, { Component } from "react";
 import Emoji from "../shared/Emoji";
+import SplitText from "react-pose-text";
+
+const charPoses = {
+  exit: { opacity: 0, y: 20 },
+  enter: {
+    opacity: 1,
+    y: 0,
+    delay: ({ charIndex }) => charIndex * 30
+  }
+};
 
 class About extends Component {
   render() {
@@ -11,11 +21,15 @@ class About extends Component {
               Hi, <Emoji symbol="👋" label="hello" />
               <br />
               My name is <br />
-              <strong>Yeondam Park</strong>
+              <SplitText initialPose="exit" pose="enter" charPoses={charPoses}>
+                Yeondam Park
+              </SplitText>
               <br />
             </h1>
+
             <p className="content__page-about--description">
-              I' m Self-taught Front End Engineer. My passion is to
+              I' m Self-taught Front End Engineer. <br />
+              My passion is to
               <br />
               build a beautiful things with the modern technologies.
               <br />

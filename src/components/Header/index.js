@@ -1,5 +1,13 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
+import posed from "react-pose";
+
+const MobileMenu = posed.div({
+  closed: { height: 0, transition: { duration: 50 } },
+  open: {
+    height: 300
+  }
+});
 
 class Header extends Component {
   state = {
@@ -36,32 +44,34 @@ class Header extends Component {
           </ul>
           <div className="nav__list-mobile" onClick={this.menuToggle} />
         </nav>
-        {this.state.isMenuClick && (
-          <div className="mobile__dropdown">
-            <ul className="mobile__dropdown-list">
-              <li>
-                <Link to="/" onClick={this.menuToggle}>
-                  Home
-                </Link>
-              </li>
-              <li>
-                <Link to="/about" onClick={this.menuToggle}>
-                  About
-                </Link>
-              </li>
-              <li>
-                <Link to="/contact" onClick={this.menuToggle}>
-                  Contact
-                </Link>
-              </li>
-              <li>
-                <Link to="/resume" onClick={this.menuToggle}>
-                  Resume
-                </Link>
-              </li>
-            </ul>
-          </div>
-        )}
+
+        <MobileMenu
+          className="mobile__dropdown"
+          pose={this.state.isMenuClick ? "open" : "closed"}
+        >
+          <ul className="mobile__dropdown-list">
+            <li>
+              <Link to="/" onClick={this.menuToggle}>
+                Home
+              </Link>
+            </li>
+            <li>
+              <Link to="/about" onClick={this.menuToggle}>
+                About
+              </Link>
+            </li>
+            <li>
+              <Link to="/contact" onClick={this.menuToggle}>
+                Contact
+              </Link>
+            </li>
+            <li>
+              <Link to="/resume" onClick={this.menuToggle}>
+                Resume
+              </Link>
+            </li>
+          </ul>
+        </MobileMenu>
       </header>
     );
   }

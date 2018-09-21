@@ -55,14 +55,18 @@
     text-align: center;
 
     h1 {
-      font-size: 2.5em !important;
+      font-size: 2em !important;
       font-weight: 700 !important;
+      margin-bottom: 0 !important;
+
+      span {
+        font-size: 35px;
+      }
     }
 
-    .tagline {
-      left: 0;
-      right: 0;
-      font-size: .6em;
+    p {
+      width: 80%;
+      margin: 1em auto 1em auto !important;
     }
 
     .btn {

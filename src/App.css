@@ -78,7 +78,8 @@
     justify-content: center;
     align-items: center;
     text-align: center;
-    margin-top: 1em; }
+    margin-top: 1em;
+    overflow: hidden; }
     .header__section .mobile__dropdown .mobile__dropdown-list {
       list-style: none;
       padding-top: 1em;
@@ -145,12 +146,14 @@
     width: 100% !important;
     text-align: center; }
     .content__page-home h1 {
-      font-size: 2.5em !important;
-      font-weight: 700 !important; }
-    .content__page-home .tagline {
-      left: 0;
-      right: 0;
-      font-size: .6em; }
+      font-size: 2em !important;
+      font-weight: 700 !important;
+      margin-bottom: 0 !important; }
+      .content__page-home h1 span {
+        font-size: 35px; }
+    .content__page-home p {
+      width: 80%;
+      margin: 1em auto 1em auto !important; }
     .content__page-home .btn {
       width: 50%; }
   .content__image {
@@ -333,6 +336,8 @@
 
 /* Portrait and Landscape */
 @media (max-width: 769px) {
+  .portfolio {
+    margin-top: 3em; }
   .portfolio__container {
     display: none !important; }
   .portfolio__detail-mobile {
@@ -472,8 +477,8 @@
     width: 100% !important;
     text-align: center; }
     .content__page-about--description {
-      width: 100%;
-      margin-top: 0 !important; }
+      width: 80%;
+      margin: 0 auto 2em auto; }
   .content__image {
     display: none; }
   .about {
@@ -539,7 +544,10 @@
 
 @media (max-width: 769px) {
   .form__area {
-    width: 90% !important; } }
+    width: 90% !important; }
+    .form__area .form__area-heading h2 {
+      font-size: 2em;
+      padding-top: 1em; } }
 
 .resume__title {
   font-size: 2em;

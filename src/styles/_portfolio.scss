@@ -223,6 +223,10 @@
 
 /* Portrait and Landscape */
 @media (max-width: 769px) {
+  .portfolio {
+    margin-top: 3em;
+  }
+
   .portfolio__container {
     display: none !important;
   }

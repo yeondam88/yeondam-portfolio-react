@@ -1,27 +1,9 @@
 import React, { Component } from "react";
 import img from "../../img/paper-plane.svg";
-import posed from "react-pose";
 import TypedText from "./Typed";
 
-const Text = posed.strong({
-  visible: { opacity: 1 },
-  hidden: { opacity: 0 }
-});
-
 class Content extends Component {
-  state = {
-    textIdx: 0,
-    isVisible: true
-  };
-
-  componentDidMount() {
-    setInterval(() => {
-      this.setState({ isVisible: !this.state.isVisible });
-    }, 3000);
-  }
-
   render() {
-    const { isVisible } = this.state;
     return (
       <section className="content">
         <div className="content__page-home">
