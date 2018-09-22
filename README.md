@@ -1,6 +1,8 @@
-# Personal portfolio website
+# Personal portfolio website 😎
 Built with React/React Router/Sass
 
-TODO:
--[] Use GatsbyJS
--[] Build backend with database for portfolios, blog post
+## TODO
+* [ ] 🚀Migrate to GatsbyJS
+* [ ] 🚀Build backend API for blog post & portfolio
+* [ ] 🚀Improving performance
+* [ ] ⌨️Creating admin panel
