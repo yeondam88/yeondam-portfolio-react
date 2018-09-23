@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import { Document, Page } from "react-pdf";
 import Emoji from "../shared/Emoji";
 import resume from "../../img/lloyd_park_resume.pdf";
+import { Helmet } from 'react-helmet';
 
 class Resume extends Component {
   state = {
@@ -17,6 +18,10 @@ class Resume extends Component {
     const { pageNumber } = this.state;
     return (
       <React.Fragment>
+        <Helmet>
+          <title>Yeondam | Resume</title>
+          <meta name="description" content="Front-End Developer based in Los Angeles. JavaScript enthusiast, with a passion for front end development." />
+        </Helmet>
         <div className="resume__title">
           <h1>
             Resume

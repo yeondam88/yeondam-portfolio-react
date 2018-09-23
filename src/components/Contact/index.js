@@ -1,9 +1,14 @@
 import React from "react";
 import Emoji from "../shared/Emoji";
+import { Helmet } from 'react-helmet';
 
 const Contact = () => {
   return (
     <React.Fragment>
+      <Helmet>
+          <title>Yeondam | Contact</title>
+          <meta name="description" content="Yeondam Park - Front End Developer | Contact page" />
+        </Helmet>
       <section className="content">
         <div className="content__page-home">
           <h1>

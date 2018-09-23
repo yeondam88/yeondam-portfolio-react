@@ -19,7 +19,12 @@ const PortfolioDetail = ({
           <p>{activePortfolio.description}</p>
           {renderStacksList(activePortfolio.stacks)}
           <div className="btn-group">
-            <a href={activePortfolio.link} className="btn" target="_blank">
+            <a
+              href={activePortfolio.link}
+              className="btn"
+              target="_blank"
+              rel="noreferrer"
+            >
               See in action{" "}
               <span>
                 <i className="fas fa-desktop" style={{ color: "white" }} />

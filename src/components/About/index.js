@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import Emoji from "../shared/Emoji";
 import Fade from "react-reveal/Fade";
 import SplitText from "react-pose-text";
+import { Helmet } from "react-helmet";
 
 const charPoses = {
   exit: { opacity: 0, y: 20 },
@@ -16,6 +17,10 @@ class About extends Component {
   render() {
     return (
       <React.Fragment>
+        <Helmet>
+          <title>Yeondam | About</title>
+          <meta name="description" content="Front-End Developer based in Los Angeles. JavaScript enthusiast, with a passion for front end development." />
+        </Helmet>
         <Fade delay={500}>
           <section className="content">
             <div className="content__page-about">
