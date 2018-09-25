@@ -136,7 +136,8 @@
   .content .content__image {
     width: 38%; }
     .content .content__image img {
-      width: 100%; }
+      width: 100%;
+      padding-bottom: 3em; }
 
 @media (max-width: 769px) {
   .content {

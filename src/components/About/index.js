@@ -4,6 +4,8 @@ import Fade from "react-reveal/Fade";
 import SplitText from "react-pose-text";
 import { Helmet } from "react-helmet";
 
+import profileImg from "../../img/yeondampark_head.svg";
+
 const charPoses = {
   exit: { opacity: 0, y: 20 },
   enter: {
@@ -19,7 +21,10 @@ class About extends Component {
       <React.Fragment>
         <Helmet>
           <title>Yeondam | About</title>
-          <meta name="description" content="Front-End Developer based in Los Angeles. JavaScript enthusiast, with a passion for front end development." />
+          <meta
+            name="description"
+            content="Front-End Developer based in Los Angeles. JavaScript enthusiast, with a passion for front end development."
+          />
         </Helmet>
         <Fade delay={500}>
           <section className="content">
@@ -53,7 +58,9 @@ class About extends Component {
                 backend programming as well.
               </p>
             </div>
-            <div className="content__image" />
+            <div className="content__image">
+              <img src={profileImg} alt="Yeondam Park Profile" height={354} />
+            </div>
           </section>
           <section className="about">
             <h2 className="section__title">
