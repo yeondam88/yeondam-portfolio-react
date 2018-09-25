@@ -2,6 +2,8 @@ import React, { Component } from "react";
 import img from "../../img/paper-plane.svg";
 import TypedText from "./Typed";
 
+import profileImg from "../../img/yeondampark_head.svg";
+
 class Content extends Component {
   render() {
     return (
@@ -35,7 +37,9 @@ class Content extends Component {
             </button>
           </a>
         </div>
-        <div className="content__image" />
+        <div className="content__image">
+          <img src={profileImg} alt="Yeondam Park Profile" height={354} />
+        </div>
       </section>
     );
   }

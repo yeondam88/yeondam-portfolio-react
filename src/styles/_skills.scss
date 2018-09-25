@@ -1,6 +1,5 @@
 .skills {
   padding-top: 10em;
-  padding-bottom: 10em;
   text-align: center;
 
   .skills__info {
@@ -50,6 +49,7 @@
       width: 70%;
       height: 100%;
       box-shadow: $box-shadow;
+      background: white;
       position: absolute;
       border-top-left-radius: 120px;
       border-bottom-left-radius: 120px;

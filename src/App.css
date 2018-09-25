@@ -44,13 +44,13 @@
     .header__section .nav .nav__list {
       list-style: none; }
       .header__section .nav .nav__list li {
-        color: white;
+        color: #231f20;
         display: inline-block;
         margin-right: 25px;
         font-size: 1.5em;
         font-weight: 700; }
         .header__section .nav .nav__list li a {
-          color: white;
+          color: #231f20;
           text-transform: uppercase;
           text-decoration: none;
           position: relative;
@@ -62,7 +62,7 @@
             cursor: pointer;
             left: -3px;
             top: -3px;
-            text-shadow: 1px 3px 0 #6c63ff; }
+            text-shadow: 1px 3px 0 #5065af; }
     .header__section .nav .nav__list-mobile:before {
       content: "";
       background: url(img/menu.svg);
@@ -91,7 +91,7 @@
           font-size: 2em;
           text-decoration: none;
           color: white;
-          text-shadow: 1px 2px 0 #6c63ff; }
+          text-shadow: 1px 2px 0 #5065af; }
 
 @media (max-width: 769px) {
   .header__section {
@@ -131,7 +131,7 @@
       margin-top: 4em;
       margin-bottom: 1em; }
     .content .content__page-home-description {
-      color: #111720 !important;
+      color: #231f20 !important;
       font-size: 1.2em; }
   .content .content__image {
     width: 38%; }
@@ -182,8 +182,8 @@
         cursor: pointer;
         left: -5px;
         top: -5px;
-        -webkit-box-shadow: 10px 10px 0 #6c63ff;
-        box-shadow: 10px 10px 0 #6c63ff; }
+        -webkit-box-shadow: 10px 10px 0 #5065af;
+        box-shadow: 10px 10px 0 #5065af; }
   .portfolio .portfolio__detail {
     display: flex;
     position: absolute;
@@ -328,11 +328,11 @@
   top: 0; }
 
 .tag:hover {
-  background-color: #6c63ff;
+  background-color: #5065af;
   color: white; }
 
 .tag:hover::after {
-  border-left-color: #6c63ff; }
+  border-left-color: #5065af; }
 
 /* Portrait and Landscape */
 @media (max-width: 769px) {
@@ -355,7 +355,6 @@
 
 .skills {
   padding-top: 10em;
-  padding-bottom: 10em;
   text-align: center; }
   .skills .skills__info {
     max-width: 1400px;
@@ -382,7 +381,7 @@
           margin-bottom: .5em; }
         .skills .skills__info .skills__info-list--item i {
           font-size: 3em;
-          color: #6c63ff;
+          color: #5065af;
           transition: all .3s ease; }
           .skills .skills__info .skills__info-list--item i:hover {
             cursor: pointer;
@@ -393,6 +392,7 @@
       width: 70%;
       height: 100%;
       box-shadow: 0 20px 36px -4px rgba(157, 166, 186, 0.4);
+      background: white;
       position: absolute;
       border-top-left-radius: 120px;
       border-bottom-left-radius: 120px;
@@ -424,7 +424,7 @@
     color: #9DA6BA;
     margin-top: 2em; }
   .content__page-about--description {
-    color: #111720 !important;
+    color: #231f20 !important;
     font-size: 1.2em; }
     .content__page-about--description .text-bg {
       position: relative; }
@@ -433,7 +433,7 @@
         width: 100%;
         height: 100%;
         position: absolute;
-        background: #b4b0ff;
+        background: #8593c7;
         opacity: 70%;
         z-index: -1;
         animation: skewAnim 2s ease infinite; }
@@ -461,16 +461,16 @@
       .about .about__container .card:hover {
         left: -5px;
         top: -5px;
-        -webkit-box-shadow: 10px 10px 0 #6c63ff;
-        box-shadow: 10px 10px 0 #6c63ff; }
+        -webkit-box-shadow: 10px 10px 0 #5065af;
+        box-shadow: 10px 10px 0 #5065af; }
     .about .about__container .about__container-item {
       text-align: left; }
       .about .about__container .about__container-item > * {
-        color: #111720; }
+        color: #231f20; }
       .about .about__container .about__container-item--link {
         margin-left: 5px; }
         .about .about__container .about__container-item--link a {
-          color: #111720; }
+          color: #231f20; }
 
 @media (max-width: 769px) {
   .content__page-about {
@@ -540,7 +540,7 @@
         .form__area form .input__bar .input__bar-field .form__area-input {
           font-size: 1em;
           padding-left: 50px;
-          color: #111720;
+          color: #231f20;
           background: transparent;
           font-weight: 400;
           width: 100%;
@@ -675,21 +675,27 @@ footer {
           transition: .5s ease-in; }
           footer .footer__social-container ul li a i {
             font-size: 3em;
-            color: #6c63ff; }
+            color: white; }
             footer .footer__social-container ul li a i:hover {
               transform: rotate(360deg); }
   footer .footer__info {
     display: flex;
     justify-content: space-between;
     margin-bottom: 2em; }
+    footer .footer__info p {
+      color: white; }
 
 @media (max-width: 769px) {
   .footer__social-container {
     margin-top: 0;
     padding: 0 !important; }
+    .footer__social-container i {
+      color: #231f20 !important; }
   .footer__info {
     margin-bottom: 2em;
-    padding: 0 2em; } }
+    padding: 0 2em; }
+    .footer__info p {
+      color: #231f20 !important; } }
 
 html,
 body,
@@ -789,8 +795,8 @@ video {
 
 body.stripes {
   width: 100%;
-  height: 100vh;
-  background: url("img/bg.svg");
+  height: 100%;
+  background: url("img/yeondampark_background.svg");
   background-size: cover;
   background-repeat: no-repeat;
   position: relative; }
@@ -799,19 +805,9 @@ body.stripes {
   margin: 0 auto;
   max-width: 1150px; }
 
-.bg {
-  position: absolute;
-  background: url("img/bg_2.svg");
-  background-size: cover;
-  width: 100%;
-  height: 100%;
-  bottom: 0;
-  filter: opacity(30%);
-  z-index: -999; }
-
 .section__title {
   font-size: 2em;
-  text-shadow: 1px 2px 0 #6c63ff; }
+  text-shadow: 1px 2px 0 #5065af; }
 
 .btn {
   display: inline-block;
@@ -827,7 +823,7 @@ body.stripes {
   font-size: 1rem;
   line-height: 1;
   color: #fff;
-  background: #6c63ff;
+  background: #5065af;
   border-radius: .375rem;
   -webkit-box-shadow: 0 0.25rem 0.43rem 0 var(--shadow-color);
   box-shadow: 0 0.25rem 0.43rem 0 var(--shadow-color);
@@ -845,7 +841,5 @@ body.stripes {
     transform: translateY(-5px); }
 
 @media (max-width: 769px) {
-  body.stripes {
-    background: none; }
   .container {
     overflow: hidden; } }

@@ -23,7 +23,7 @@ footer {
 
           i {
             font-size: 3em;
-            color: $primary-background-color;
+            color: white;
 
             &:hover {
               transform: rotate(360deg);
@@ -38,6 +38,10 @@ footer {
     display: flex;
     justify-content: space-between;
     margin-bottom: 2em;
+
+    p {
+      color: white;
+    }
   }
 }
 
@@ -45,10 +49,18 @@ footer {
   .footer__social-container {
     margin-top: 0;
     padding: 0 !important;
+
+    i {
+      color: $primary-text-color !important;
+    }
   }
 
   .footer__info {
     margin-bottom: 2em;
     padding: 0 2em;
+
+    p {
+      color: $primary-text-color !important;
+    }
   }
 }
