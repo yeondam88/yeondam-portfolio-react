@@ -8,7 +8,7 @@ const Skills = () => {
         <div className="skills__info-list">
           <div className="skills__info-list--item">
             <h3>HTML 5</h3>
-            <i className="fab fa-html5" />
+            <i className="fab fa-html5" aria-label="HTML 5" />
           </div>
           <div className="skills__info-list--item">
             <h3>CSS 3</h3>
