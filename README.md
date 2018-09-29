@@ -1,5 +1,8 @@
 # Personal portfolio website 😎
 ![MIT License][license-badge]
+
+<img src="yeondampark.com.png" />
+
 ## Built with React/React Router/Sass
 <p>
   <img src="https://res.cloudinary.com/yeondam88/image/upload/v1537633710/react-original.svg" width="30" />
