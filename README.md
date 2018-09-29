@@ -1,10 +1,12 @@
-![MIT License][license-badge]
 # Personal portfolio website 😎
+![MIT License][license-badge]
 ## Built with React/React Router/Sass
 <p>
   <img src="https://res.cloudinary.com/yeondam88/image/upload/v1537633710/react-original.svg" width="30" />
   <img src="https://res.cloudinary.com/yeondam88/image/upload/v1537633665/sass-original.svg" width="30" />
 </p>
+
+Made with React and custom styles from scratch to show off some of my works.
 
 ## TODO
 * [ ] 🚀Migrate to GatsbyJS
