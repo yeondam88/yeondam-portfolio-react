@@ -8,6 +8,15 @@
 
 Made with React and custom styles from scratch to show off some of my works.
 
+### Run locally
+```js
+git clone https://github.com/yeondam88/yeondam-portfolio-react.git
+
+npm install
+
+npm start
+```
+
 ## TODO
 * [ ] 🚀Migrate to GatsbyJS
 * [ ] 💻Build backend API for blog post & portfolio
