@@ -25,7 +25,7 @@ class Header extends Component {
           <Link to="/" style={{ textDecoration: "none", color: "#111720" }}>
             <div className="nav__logo">
               <div className="nav__logo-item">Y</div>
-              <h1>Yeondam Park</h1>
+              <h1>Lloyd Park</h1>
             </div>
           </Link>
           <ul className="nav__list">

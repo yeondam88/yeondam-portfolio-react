@@ -38,16 +38,15 @@ class About extends Component {
                   pose="enter"
                   charPoses={charPoses}
                 >
-                  Yeondam Park
+                  Lloyd Park
                 </SplitText>
                 <br />
               </h1>
 
               <p className="content__page-about--description">
                 I' m Self-taught Front End Engineer. <br />
-                My passion is to
-                <br />
-                build a beautiful things with the modern technologies.
+                My passion is to build a beautiful things with the modern
+                technologies.
                 <br />
                 <br />
                 My favorite and primary programming language is{" "}

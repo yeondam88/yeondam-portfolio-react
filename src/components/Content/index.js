@@ -10,7 +10,7 @@ class Content extends Component {
       <section className="content">
         <div className="content__page-home">
           <h1>
-            I'm Yeondam Park
+            I'm Lloyd Park
             <br />
             <TypedText
               strings={[
@@ -21,6 +21,7 @@ class Content extends Component {
             />
           </h1>
           <p>
+            Hi, my name is Lloyd(Yeondam) Park <br />
             Love to building a beautiful things with <strong>JavaScript</strong>
           </p>
           <a href="mailto:lloyd.park88@gmail.com">
