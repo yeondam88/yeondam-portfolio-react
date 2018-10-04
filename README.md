@@ -11,6 +11,11 @@
 
 Made with React and custom styles from scratch to show off some of my works.
 
+## Things I've learned
+* Animation with React
+* How to write more easy to maintain and modular Sass
+* How to use third party react-libraries
+
 ### Run locally
 ```js
 git clone https://github.com/yeondam88/yeondam-portfolio-react.git
