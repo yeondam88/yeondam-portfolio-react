@@ -94,38 +94,38 @@ class Portfolio extends Component {
           />
           <PortfolioItem
             openPortfolio={this.openPortfolioDetail.bind(this, 2)}
-            src={require("../../img/portfolio_2.jpg")}
-            alt="airbnb style react app"
+            src={require("../../img/portfolio_2.png")}
+            alt="Social network app with React/Redux"
           />
           <PortfolioItem
             openPortfolio={this.openPortfolioDetail.bind(this, 3)}
             src={require("../../img/portfolio_3.jpg")}
-            alt="airbnb style react app"
+            alt="VRS Design official site"
           />
           <PortfolioItem
             openPortfolio={this.openPortfolioDetail.bind(this, 4)}
             src={require("../../img/portfolio_4.jpg")}
-            alt="airbnb style react app"
+            alt="MovieMatch built with React"
           />
           <PortfolioItem
             openPortfolio={this.openPortfolioDetail.bind(this, 5)}
             src={require("../../img/portfolio_5.jpg")}
-            alt="airbnb style react app"
+            alt="Lyric search app with React"
           />
           <PortfolioItem
             openPortfolio={this.openPortfolioDetail.bind(this, 6)}
             src={require("../../img/portfolio_6.jpg")}
-            alt="airbnb style react app"
+            alt="Reddit search app with Vanilla JS"
           />
           <PortfolioItem
             openPortfolio={this.openPortfolioDetail.bind(this, 7)}
             src={require("../../img/portfolio_7.jpg")}
-            alt="airbnb style react app"
+            alt="Expense record app with React"
           />
           <PortfolioItem
             openPortfolio={this.openPortfolioDetail.bind(this, 8)}
             src={require("../../img/portfolio_8.jpg")}
-            alt="airbnb style react app"
+            alt="Yeondam Park(Lloyd) portfolio app with React"
           />
         </div>
         <PortfolioDetail

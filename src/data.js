@@ -20,7 +20,7 @@ export const portfolioData = [
   {
     id: 2,
     title: "Social media App for Devs",
-    path: `${require("./img/portfolio_2.jpg")}`,
+    path: `${require("./img/portfolio_2.png")}`,
     description: "Social Web app for Developers",
     link: "https://mern-stack-devconnector.herokuapp.com/",
     githubLink: "https://github.com/yeondam88/mern-stack-fullstack-app",
