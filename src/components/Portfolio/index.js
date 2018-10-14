@@ -15,13 +15,11 @@ class Portfolio extends Component {
   componentDidMount() {
     const body = document.querySelector("body");
     body.addEventListener("click", this.closePortfolioDetail);
-    console.log("body clicked!");
   }
 
   componentWillUnmount() {
     const body = document.querySelector("body");
     body.removeEventListener("click", this.closePortfolioDetail);
-    console.log("event removed!!");
   }
 
   openPortfolioDetail = (id, e) => {
@@ -40,12 +38,9 @@ class Portfolio extends Component {
       return portfolio.id === id;
     });
 
-    this.setState(
-      {
-        activePortfolio
-      },
-      () => console.log(this.state.activePortfolio)
-    );
+    this.setState({
+      activePortfolio
+    });
   };
 
   renderStacksList = stacks => {
