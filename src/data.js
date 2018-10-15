@@ -2,7 +2,7 @@ export const portfolioData = [
   {
     id: 1,
     title: "Airbnb clone Rental App",
-    path: `${require("./img/portfolio_1.jpg")}`,
+    path: `${require("./img/portfolio_1.png")}`,
     description:
       "Airbnb clone app with user authentication and registration, booking, modifing bookings fully features fullstack application.",
     link: "https://react-airbnb-style-app.herokuapp.com",
