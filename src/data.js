@@ -29,7 +29,7 @@ export const portfolioData = [
   {
     id: 3,
     title: "VRS Design Official Site",
-    path: `${require("./img/portfolio_3.jpg")}`,
+    path: `${require("./img/portfolio_3.png")}`,
     description: "VRS Design, Inc official website. Powered by Shopify",
     link: "https://vrsdesign.com",
     stacks: ["Shopify", "HTML5", "CSS3", "jQuery", "JavaScript"]
@@ -76,7 +76,8 @@ export const portfolioData = [
     path: `${require("./img/portfolio_8.png")}`,
     link: "https://yeondampark.com",
     githubLink: "https://github.com/yeondam88/yeondam-portfolio-react",
-    description: "Portfolio Site",
+    description:
+      "Lloyd(Yeondam) Park's personal portfolio site. Built with React",
     stacks: ["react", "Sass"]
   }
 ];

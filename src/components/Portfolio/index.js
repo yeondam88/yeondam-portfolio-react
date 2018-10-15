@@ -94,7 +94,7 @@ class Portfolio extends Component {
           />
           <PortfolioItem
             openPortfolio={this.openPortfolioDetail.bind(this, 3)}
-            src={require("../../img/portfolio_3.jpg")}
+            src={require("../../img/portfolio_3.png")}
             alt="VRS Design official site"
           />
           <PortfolioItem
