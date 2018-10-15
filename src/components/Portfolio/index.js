@@ -84,7 +84,7 @@ class Portfolio extends Component {
         <div className="portfolio__container">
           <PortfolioItem
             openPortfolio={this.openPortfolioDetail.bind(this, 1)}
-            src={require("../../img/portfolio_1.jpg")}
+            src={require("../../img/portfolio_1.png")}
             alt="airbnb style react app"
           />
           <PortfolioItem
@@ -119,7 +119,7 @@ class Portfolio extends Component {
           />
           <PortfolioItem
             openPortfolio={this.openPortfolioDetail.bind(this, 8)}
-            src={require("../../img/portfolio_8.jpg")}
+            src={require("../../img/portfolio_8.png")}
             alt="Yeondam Park(Lloyd) portfolio app with React"
           />
         </div>
