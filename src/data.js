@@ -73,7 +73,7 @@ export const portfolioData = [
   {
     id: 8,
     title: "Yeondam's Portfolio",
-    path: `${require("./img/portfolio_8.jpg")}`,
+    path: `${require("./img/portfolio_8.png")}`,
     link: "https://yeondampark.com",
     githubLink: "https://github.com/yeondam88/yeondam-portfolio-react",
     description: "Portfolio Site",
