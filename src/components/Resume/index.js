@@ -30,6 +30,13 @@ class Resume extends Component {
             Resume
             <Emoji symbol="👻" />
           </h1>
+          <a
+            href={resume}
+            download
+            style={{ fontSize: "1rem", color: "inherit" }}
+          >
+            Download Resume
+          </a>
         </div>
         <div className="resume__container">
           <Document
