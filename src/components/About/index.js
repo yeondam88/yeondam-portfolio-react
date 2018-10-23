@@ -44,17 +44,19 @@ class About extends Component {
               </h1>
 
               <p className="content__page-about--description">
-                I' m Self-taught Front End Engineer. <br />
-                My passion is to build a beautiful things with the modern
-                technologies.
+                Passionate and motivated Front End Developer with 3+ years of
+                experience working in eCommerce and marketing industries in
+                Front End Developer role. <br />
+                <br /> Skilled React/JavaScript developer and vast knowledge of
+                object-oriented software engineering concepts. <br />
+                Solid understanding of React andJavaScript(ES6+).
                 <br />
                 <br />
                 My favorite and primary programming language is{" "}
                 <span className="text-bg" style={{ position: "relative" }}>
                   JavaScript
                 </span>
-                . I like to do mostly the Front-End, but with Node I do the
-                backend programming as well.
+                . When I am not coding I love listening to music and djing.
               </p>
             </div>
             <div className="content__image">
