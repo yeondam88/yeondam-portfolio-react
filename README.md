@@ -26,7 +26,7 @@ npm start
 ```
 
 ## TODO
-* [ ] 🚀Migrate to GatsbyJS
+* [ ] 🚀Migrate to GatsbyJS or Next.js
 * [ ] 💻Build backend API for blog post & portfolio
 * [x] 🔥Improving performance
 * [ ] ⌨️Creating admin panel
