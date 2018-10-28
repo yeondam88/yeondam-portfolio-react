@@ -1,7 +1,7 @@
 # Personal portfolio website 😎
 ![MIT License][license-badge]
 
-<img src="yeondampark.com.png" />
+<img src="lloydpark_porfolio.png" />
 
 ## Built with React/React Router/Sass
 <p>
