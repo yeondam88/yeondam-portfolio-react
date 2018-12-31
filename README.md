@@ -28,6 +28,7 @@ npm start
 ## TODO
 * [ ] 🚀Migrate to GatsbyJS or Next.js
 * [ ] 💻Build backend API for blog post & portfolio
+* [ ] Django ? or Node.js powered backend ?
 * [x] 🔥Improving performance
 * [ ] ⌨️Creating admin panel
 
