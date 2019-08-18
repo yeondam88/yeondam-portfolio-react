@@ -1,7 +1,7 @@
 # Personal portfolio website 😎
 ![MIT License][license-badge]
 
-<img src="yeondampark.com.png" />
+<img src="lloydpark_porfolio.png" />
 
 ## Built with React/React Router/Sass
 <p>
@@ -26,9 +26,9 @@ npm start
 ```
 
 ## TODO
-* [ ] 🚀Migrate to GatsbyJS
 * [ ] 💻Build backend API for blog post & portfolio
+* [ ] Django ? or Node.js powered backend ?
 * [x] 🔥Improving performance
-* [ ] ⌨️Creating admin panel
-
+* [ ] Creating admin panel
+* [ ] Revamping the design and add to study resource page with data
 [license-badge]: https://img.shields.io/npm/l/console.pretty.svg?style=flat-square
