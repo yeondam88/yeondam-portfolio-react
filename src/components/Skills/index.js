@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 
 const Skills = () => {
   return (
@@ -39,6 +39,14 @@ const Skills = () => {
           <div className="skills__info-list--item">
             <h3>Python</h3>
             <i className="fab fa-python" />
+          </div>
+          <div className="skills__info-list--item">
+            <h3>PHP</h3>
+            <i className="fab fa-php" />
+          </div>
+          <div className="skills__info-list--item">
+            <h3>Salesforce</h3>
+            <i className="fab fa-salesforce" />
           </div>
         </div>
       </div>

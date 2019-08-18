@@ -1,10 +1,10 @@
-import React, { Component } from "react";
-import Emoji from "../shared/Emoji";
-import Fade from "react-reveal/Fade";
-import SplitText from "react-pose-text";
-import { Helmet } from "react-helmet";
+import React, { Component } from 'react';
+import Emoji from '../shared/Emoji';
+import Fade from 'react-reveal/Fade';
+import SplitText from 'react-pose-text';
+import { Helmet } from 'react-helmet';
 
-import profileImg from "../../img/yeondampark_head.svg";
+import profileImg from '../../img/yeondampark_head.svg';
 
 const charPoses = {
   exit: { opacity: 0, y: 20 },
@@ -52,8 +52,8 @@ class About extends Component {
                 Solid understanding of React andJavaScript(ES6+).
                 <br />
                 <br />
-                My favorite and primary programming language is{" "}
-                <span className="text-bg" style={{ position: "relative" }}>
+                My favorite and primary programming language is{' '}
+                <span className="text-bg" style={{ position: 'relative' }}>
                   JavaScript
                 </span>
                 . When I am not coding I love listening to music and djing.
@@ -71,12 +71,36 @@ class About extends Component {
               <div className="card">
                 <img
                   height="30px"
+                  src="https://image.brightpoint.net/brightpoint.svg"
+                  alt="BrightPoint Captial"
+                />
+                <div className="about__container-item">
+                  <h1>
+                    BrightPoint Capital{' '}
+                    <span className="about__container-item--link">
+                      <a
+                        href="https://brightpoint.net"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <i className="fas fa-external-link-alt" />
+                      </a>
+                    </span>
+                  </h1>
+                  <p>2019 - Present</p>
+                  <p>Software Engineer</p>
+                  <i className="fal fa-browser" />
+                </div>
+              </div>
+              <div className="card">
+                <img
+                  height="30px"
                   src="https://cdn.shopify.com/s/files/1/1270/3733/files/NEW_VRS_LOGO_x20@2x.png?v=1516905986"
                   alt="vrs logo"
                 />
                 <div className="about__container-item">
                   <h1>
-                    VRS Design{" "}
+                    VRS Design{' '}
                     <span className="about__container-item--link">
                       <a
                         href="https://vrsdesign.com"
@@ -87,7 +111,7 @@ class About extends Component {
                       </a>
                     </span>
                   </h1>
-                  <p>2016 - Present</p>
+                  <p>2016 - 2019</p>
                   <p>Front End Developer</p>
                   <i className="fal fa-browser" />
                 </div>
@@ -100,7 +124,7 @@ class About extends Component {
                 />
                 <div className="about__container-item">
                   <h1>
-                    KW International{" "}
+                    KW International{' '}
                     <span className="about__container-item--link">
                       <a
                         href="http://www.kwinternational.com/"
@@ -112,7 +136,7 @@ class About extends Component {
                     </span>
                   </h1>
                   <p>2015 - 2016</p>
-                  <p>IT associate / Supervisor</p>
+                  <p>IT associate / Warehouse Supervisor</p>
                 </div>
               </div>
             </div>
