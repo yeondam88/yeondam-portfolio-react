@@ -29,5 +29,5 @@ npm start
 * [ ] 💻Build backend API for blog post & portfolio
 * [x] 🔥Improving performance
 * [ ] Revamping the design and add to study resource page with data
-* [ ] Migrate to GatsbyJS (Start on 10/1/2019)
+* [ ] Adding recent project and employement information
 [license-badge]: https://img.shields.io/npm/l/console.pretty.svg?style=flat-square
