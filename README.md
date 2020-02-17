@@ -27,8 +27,7 @@ npm start
 
 ## TODO
 * [ ] 💻Build backend API for blog post & portfolio
-* [ ] Django ? or Node.js powered backend ?
 * [x] 🔥Improving performance
-* [ ] Creating admin panel
 * [ ] Revamping the design and add to study resource page with data
+* [ ] Adding recent project and employement information
 [license-badge]: https://img.shields.io/npm/l/console.pretty.svg?style=flat-square
