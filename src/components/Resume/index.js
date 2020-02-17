@@ -1,8 +1,8 @@
-import React, { Component } from "react";
-import { Document, Page } from "react-pdf";
-import Emoji from "../shared/Emoji";
-import resume from "../../img/lloyd_park_resume_v3.pdf";
-import { Helmet } from "react-helmet";
+import React, { Component } from 'react';
+import { Document, Page } from 'react-pdf';
+import Emoji from '../shared/Emoji';
+import resume from '../../img/lloyd_park_resume.pdf';
+import { Helmet } from 'react-helmet';
 
 class Resume extends Component {
   state = {
@@ -33,7 +33,7 @@ class Resume extends Component {
           <a
             href={resume}
             download
-            style={{ fontSize: "1rem", color: "inherit" }}
+            style={{ fontSize: '1rem', color: 'inherit' }}
           >
             Download Resume
           </a>
