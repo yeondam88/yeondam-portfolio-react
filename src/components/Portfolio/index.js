@@ -1,49 +1,44 @@
-import React, { Component } from "react";
-import { portfolioData } from "../../data";
-import PortfolioItem from "./PortfolioItem";
-import MobilePorfolio from "./MobilePortfolio";
-import closeIcon from "../../img/close.svg";
-import PortfolioDetail from "./PortfolioDetail";
+import React, { useState, useCallback, useEffect } from 'react';
+import { portfolioData } from '../../data';
+import PortfolioItem from './PortfolioItem';
+import MobilePorfolio from './MobilePortfolio';
+import closeIcon from '../../img/close.svg';
+import PortfolioDetail from './PortfolioDetail';
 
-class Portfolio extends Component {
-  state = {
-    isActive: false,
-    portfolios: portfolioData,
-    activePortfolio: {}
+import { useEventListener } from '../../hooks/useEventListener';
+
+function Portfolio() {
+  const [isActive, setIsActive] = useState(false);
+  const [portfolios, setPortfolios] = useState(portfolioData);
+  const [activePortfolio, setActivePortfolio] = useState({});
+  const body = document.querySelector('body');
+
+  const handler = useCallback(
+    event => {
+      setIsActive(false);
+    },
+    [isActive]
+  );
+
+  useEventListener('click', handler, body);
+
+  const openPortfolioDetail = (id, e) => {
+    setIsActive(true);
+    getActivePortfolio(id);
   };
 
-  componentDidMount() {
-    const body = document.querySelector("body");
-    body.addEventListener("click", this.closePortfolioDetail);
-  }
-
-  componentWillUnmount() {
-    const body = document.querySelector("body");
-    body.removeEventListener("click", this.closePortfolioDetail);
-  }
-
-  openPortfolioDetail = (id, e) => {
-    this.setState({ isActive: true });
-    this.getActivePortfolio(id);
+  const closePortfolioDetail = () => {
+    setIsActive(false);
   };
 
-  closePortfolioDetail = () => {
-    this.setState({
-      isActive: false
-    });
-  };
-
-  getActivePortfolio = id => {
-    const activePortfolio = this.state.portfolios.find(portfolio => {
+  const getActivePortfolio = id => {
+    const activePortfolio = portfolios.find(portfolio => {
       return portfolio.id === id;
     });
-
-    this.setState({
-      activePortfolio
-    });
+    setActivePortfolio(activePortfolio);
   };
 
-  renderStacksList = stacks => {
+  const renderStacksList = stacks => {
     if (stacks === undefined || stacks.length === 0) {
       return null;
     }
@@ -60,8 +55,8 @@ class Portfolio extends Component {
     );
   };
 
-  renderGithubLink = link => {
-    if (link === "" || link === undefined) {
+  const renderGithubLink = link => {
+    if (link === '' || link === undefined) {
       return null;
     }
     return (
@@ -74,67 +69,64 @@ class Portfolio extends Component {
     );
   };
 
-  render() {
-    const { isActive, activePortfolio, portfolios } = this.state;
-    return (
-      <section className="portfolio">
-        <h2 id="portfolio" className="section__title">
-          <strong>Portfolio</strong>
-        </h2>
-        <div className="portfolio__container">
-          <PortfolioItem
-            openPortfolio={this.openPortfolioDetail.bind(this, 1)}
-            src={require("../../img/portfolio_1.png")}
-            alt="airbnb style react app"
-          />
-          <PortfolioItem
-            openPortfolio={this.openPortfolioDetail.bind(this, 2)}
-            src={require("../../img/portfolio_2.png")}
-            alt="Social network app with React/Redux"
-          />
-          <PortfolioItem
-            openPortfolio={this.openPortfolioDetail.bind(this, 3)}
-            src={require("../../img/portfolio_3.png")}
-            alt="VRS Design official site"
-          />
-          <PortfolioItem
-            openPortfolio={this.openPortfolioDetail.bind(this, 4)}
-            src={require("../../img/portfolio_4.jpg")}
-            alt="MovieMatch built with React"
-          />
-          <PortfolioItem
-            openPortfolio={this.openPortfolioDetail.bind(this, 5)}
-            src={require("../../img/portfolio_5.jpg")}
-            alt="Lyric search app with React"
-          />
-          <PortfolioItem
-            openPortfolio={this.openPortfolioDetail.bind(this, 6)}
-            src={require("../../img/portfolio_6.jpg")}
-            alt="Reddit search app with Vanilla JS"
-          />
-          <PortfolioItem
-            openPortfolio={this.openPortfolioDetail.bind(this, 7)}
-            src={require("../../img/portfolio_7.jpg")}
-            alt="Expense record app with React"
-          />
-          <PortfolioItem
-            openPortfolio={this.openPortfolioDetail.bind(this, 8)}
-            src={require("../../img/portfolio_8.png")}
-            alt="Yeondam Park(Lloyd) portfolio app with React"
-          />
-        </div>
-        <PortfolioDetail
-          isActive={isActive}
-          activePortfolio={activePortfolio}
-          closeIcon={closeIcon}
-          closePortfolioDetail={this.closePortfolioDetail}
-          renderGithubLink={this.renderGithubLink}
-          renderStacksList={this.renderStacksList}
+  return (
+    <section className="portfolio">
+      <h2 id="portfolio" className="section__title">
+        <strong>Portfolio</strong>
+      </h2>
+      <div className="portfolio__container">
+        <PortfolioItem
+          openPortfolio={() => openPortfolioDetail(1)}
+          src={require('../../img/portfolio_1.png')}
+          alt="airbnb style react app"
         />
-        <MobilePorfolio portfolios={portfolios} />
-      </section>
-    );
-  }
+        <PortfolioItem
+          openPortfolio={() => openPortfolioDetail(2)}
+          src={require('../../img/portfolio_2.png')}
+          alt="Social network app with React/Redux"
+        />
+        <PortfolioItem
+          openPortfolio={() => openPortfolioDetail(3)}
+          src={require('../../img/portfolio_3.png')}
+          alt="VRS Design official site"
+        />
+        <PortfolioItem
+          openPortfolio={() => openPortfolioDetail(4)}
+          src={require('../../img/portfolio_4.jpg')}
+          alt="MovieMatch built with React"
+        />
+        <PortfolioItem
+          openPortfolio={() => openPortfolioDetail(5)}
+          src={require('../../img/portfolio_5.jpg')}
+          alt="Lyric search app with React"
+        />
+        <PortfolioItem
+          openPortfolio={() => openPortfolioDetail(6)}
+          src={require('../../img/portfolio_6.jpg')}
+          alt="Reddit search app with Vanilla JS"
+        />
+        <PortfolioItem
+          openPortfolio={() => openPortfolioDetail(7)}
+          src={require('../../img/portfolio_7.jpg')}
+          alt="Expense record app with React"
+        />
+        <PortfolioItem
+          openPortfolio={() => openPortfolioDetail(8)}
+          src={require('../../img/portfolio_8.png')}
+          alt="Yeondam Park(Lloyd) portfolio app with React"
+        />
+      </div>
+      <PortfolioDetail
+        isActive={isActive}
+        activePortfolio={activePortfolio}
+        closeIcon={closeIcon}
+        closePortfolioDetail={closePortfolioDetail}
+        renderGithubLink={renderGithubLink}
+        renderStacksList={renderStacksList}
+      />
+      <MobilePorfolio portfolios={portfolios} />
+    </section>
+  );
 }
 
 export default Portfolio;
