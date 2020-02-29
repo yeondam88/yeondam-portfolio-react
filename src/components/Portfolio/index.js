@@ -1,4 +1,4 @@
-import React, { useState, useCallback, useEffect } from 'react';
+import React, { useState, useCallback } from 'react';
 import { portfolioData } from '../../data';
 import PortfolioItem from './PortfolioItem';
 import MobilePorfolio from './MobilePortfolio';
@@ -9,7 +9,7 @@ import { useEventListener } from '../../hooks/useEventListener';
 
 function Portfolio() {
   const [isActive, setIsActive] = useState(false);
-  const [portfolios, setPortfolios] = useState(portfolioData);
+  const [portfolios] = useState(portfolioData);
   const [activePortfolio, setActivePortfolio] = useState({});
   const body = document.querySelector('body');
 
@@ -20,7 +20,15 @@ function Portfolio() {
     [isActive]
   );
 
+  const keyupHandler = useCallback(e => {
+    console.log(e.keyCode);
+    if (e.keyCode === 27) {
+      setIsActive(false);
+    }
+  });
+
   useEventListener('click', handler, body);
+  useEventListener('keyup', keyupHandler);
 
   const openPortfolioDetail = (id, e) => {
     setIsActive(true);

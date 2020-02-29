@@ -1,36 +1,22 @@
-import React, { Component } from "react";
-import Typed from "typed.js";
+import React, { useRef } from 'react';
+import { useTyped } from '../../hooks/useTyped';
 
-class TypedText extends Component {
-  componentDidMount() {
-    const { strings } = this.props;
-    const options = {
-      strings,
-      startDelay: 500,
-      typeSpeed: 50,
-      backSpeed: 50,
-      loop: true,
-      onComplete: self => {
-        self.startDelay = 0;
-      }
-    };
+function TypedText({ strings }) {
+  const targetElm = useRef(null);
+  const options = {
+    strings,
+    startDelay: 500,
+    typeSpeed: 50,
+    backSpeed: 50,
+    loop: true,
+    onComplete: self => {
+      self.startDelay = 0;
+    }
+  };
 
-    this.typed = new Typed(this.el, options);
-  }
+  useTyped(targetElm, options);
 
-  componentWillUnmount() {
-    this.typed.destroy();
-  }
-
-  render() {
-    return (
-      <span
-        ref={el => {
-          this.el = el;
-        }}
-      />
-    );
-  }
+  return <span ref={targetElm} />;
 }
 
 export default TypedText;
