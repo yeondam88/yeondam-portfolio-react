@@ -19,7 +19,7 @@ footer {
         margin: 2em 1em;
 
         a {
-          transition: .5s ease-in;
+          transition: 0.5s ease-in;
 
           i {
             font-size: 3em;
@@ -40,7 +40,11 @@ footer {
     margin-bottom: 2em;
 
     p {
-      color: white;
+      color: rgba(0, 0, 0, 0.8);
+    }
+
+    p.name {
+      color: #fff;
     }
   }
 }

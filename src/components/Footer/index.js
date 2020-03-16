@@ -31,7 +31,7 @@ const Footer = () => {
         <p>
           Made with <i className="fas fa-heart" style={{ color: "#ED154E" }} />
         </p>
-        <p>© Yeondam Park</p>
+        <p className="name">© Yeondam Park</p>
       </div>
       <div className="bg" />
     </footer>
