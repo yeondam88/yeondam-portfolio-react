@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import { Document, Page } from 'react-pdf';
 import Emoji from '../shared/Emoji';
-import resume from '../../img/lloyd_park_resume.pdf';
 import { Helmet } from 'react-helmet';
 
 class Resume extends Component {
