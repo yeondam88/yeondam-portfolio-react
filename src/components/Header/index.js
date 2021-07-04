@@ -35,9 +35,6 @@ function Header() {
           <li>
             <Link to="/contact">Contact</Link>
           </li>
-          <li>
-            <Link to="/resume">Resume</Link>
-          </li>
         </ul>
         <div className="nav__list-mobile" onClick={menuToggle} />
       </nav>
@@ -60,11 +57,6 @@ function Header() {
           <li>
             <Link to="/contact" onClick={menuToggle}>
               Contact
-            </Link>
-          </li>
-          <li>
-            <Link to="/resume" onClick={menuToggle}>
-              Resume
             </Link>
           </li>
         </ul>
